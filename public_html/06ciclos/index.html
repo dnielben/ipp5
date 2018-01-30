@@ -85,7 +85,7 @@
                                 en "".</p>
           
                                 <pre class="">var contar = 10;
-        var texto = "";</pre>
+var texto = "";</pre>
         
                                 <script>var contar = 1;</script>
         
@@ -150,17 +150,24 @@ document.getElementById("demo").innerHTML = text;
                                       
                     <h1>Ejemplo</h1>
                     
-                    <p>Este ejemplo muestra una mesa de billar.</p>
+                    <p>Este ejemplo muestra nuestra mesa de billar.</p>
                     
-                    <p>Intente realizar lo siguiente en el programa a continuación:</p>
+                    <p>Intente realizar lo siguiente en el programa a continuación según lo aprendido:</p>
+                    <!--
+Solucion
+function draw() {
+  background(0, 180, 0);
+  for(i = 0; i < 8; i++){
+      ellipse(posX + (i*20), posY, 20, 20);
+  }
+}-->
                     <ul>
                         <li>Explique qué hace el ejemplo. </li>
-                        <li>Usando condicionales permita que la bola rebote en los bordes de la mesa</li>
-                        <li>Ahora considere que la función <code>Math.random();</code> retorna un número real aleatorio entre 0 y 1.
-                            Adicionalmente considere que, la función <code>Math.floor</code> convierte un número real al entero anterior más cercano.
+                        <li>Usando un ciclo <code>for</code>, cree las 8 bolas de billar pertenecientes a la mesa.</li>
+                        <li>Usando un ciclo <code>while</code>, cree las 8 bolas de billar pertenecientes a la mesa.</li>
+                        <li>Ahora considere la función <code>Math.random();</code> retorna un número real aleatorio entre 0 y 1 para posicionar las mismas.
+                            Considere el ejemplo en el que, la función <code>Math.floor</code> convierte un número real al entero anterior más cercano.
                             Entonces, usted puede calcular un número aleatorio entre 1 y 10 de la siguiente manera: <code>Math.floor((Math.random() * 10) + 1);</code></li>
-                        <li>Permita que las velocidades iniciales de la bola se calculen de manera aleatoria al iniciar el programa.</li>
-                        <li>Borré la línea de <code>background(0, 180, 0);</code> y pásela a la función <code>setup</code>.¿Qué pasa?</li>
                     </ul>
                     
                     <p><strong>Recuerda:</strong> siempre puedes restaurar el programa original oprimiendo el botón <strong>Restaurar</strong>. </p>
