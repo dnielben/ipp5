@@ -72,81 +72,67 @@
                         <p>Los ciclos, bucles o sentencias repetitivas son fragmentos de código que se ejecutan varias veces
                             hasta que la condición asignada a dicho ciclo sea cumplida, los dos tipos de bucles más utilizados 
                             en programación son el ciclo <strong>while</strong> y el ciclo <strong>for</strong>.</p>
-                        
-                            <p>El primer ciclo, <strong>while</strong> se define usando la palabra reservada <strong>while</strong> de la siguiente manera:</p>
+
+                            <p>El primer ciclo, <strong>for</strong> se define usando la palabra reservada <strong>for</strong> de la siguiente manera:</p>
                     
-                            <pre><strong>while</strong>([Condición]) { [Lista de instrucciones separadas por ejecutar] } </pre>
+                            <pre><strong>for</strong>([variable_de_recorrido ; condicion_de_variable; incremento_de_variable_de_recorrido ]) { 
+    [Lista de instrucciones separadas por ejecutar] 
+} </pre>
                      
         
-                                <p>De esta manera el ciclo <strong>while</strong> funciona como un condicional que permite ejecutar un bloque de código repetidas veces hasta que 
-                                    el condicional deje de satisfacerse.</p>
+                                <p>De esta manera el ciclo <strong>for</strong> funciona con una estructura definida en su cabecera mediante un condicional, en este caso el condicional 
+                                    se define inicialmente por medio de una variable que definirá un rango máximo, y mediante un contador que,
+                                    procesado mediante el condicional definirá la cantidad de ciclos que el ciclo <strong>for</strong> ejecutará.</p>
                                 
-                                <p>Como ejemplo, suponga que definimos e inicializamos una variable <var>contar</var> con valor 10, y otra variable <var>texto</var> 
-                                en "".</p>
+                                <p>En el siguiente ejemplo suponga que definimos e inicializamos una variable texto <var>texto</var> con la cadena de caracteres vacia, 
+                                    y queremos realizar un ciclo que en cada iteracion le vaya agregando a esta variable, la misma mas un numero nuevo cada iteracion.</p>
           
-                                <pre class="">var contar = 10;
-var texto = "";</pre>
+                                <pre class="">var texto = "";</pre>
         
-                                <script>var contar = 1;</script>
-        
-                                <p>Ahora vamos a escribir un programa que imprima de 1 a <var>contar</var> el texto "El número es: numero_actual". Para esto
-                                    debemos ajustar una variable <var>iterador</var> que itere desde 1 a <var>contar</var> para que se cumpla la condición de 
-                                    <var>iterador</var> < <var>contar</var>, de esta manera se recorren todos los números desde 1 hasta 10.
-                                </p>
+                                <p>Ahora vamos a escribir un programa que rellene a la variable <var>texto</var> con los numeros del rango de 5 a 25.</p>
                                 
-                                <pre class="">contar = 10;
-var iterador = 1;
-while(iterador <= contar){
-    texto += "&lt;br&gt;The number is " + iterador;
-    i ++;
-}</pre>
+                                <pre class="">
+var texto = ""
+var i;
+for (i = 5; i <= 25; i++) {
+    texto += i + "&lt;br&gt;";
+}
+document.getElementById("demo").innerHTML = text;
+                                </pre>
+                                <p>Valor de la variable <var>texto</var>:</p> <span id="demo" class="badge">null</span>
+                                <br>
+                                <br>
+                                <button class="btn btn-default" type="submit" onclick="var text = ''; var i; for (i = 5; i < 26; i++) {text += i + '&lt;br&gt;';} document.getElementById('demo').innerHTML = text;">Ejecutar</button>
+                                <br>
+                                <br>
+                                <p>El segundo ciclo, <strong>while</strong> se define usando la palabra reservada <strong>while</strong> de la siguiente manera:</p>
+                    
+                            <pre><strong>while</strong>([Condición]) { 
+    [Lista de instrucciones separadas por ejecutar] 
+} </pre>
+                     
+        
+                                <p>De esta manera el ciclo <strong>while</strong> funciona con un unico condicional que permite ejecutar un bloque de código repetidas veces hasta que 
+                                    el condicional deje de satisfacerse. Es decir, si en el siguiente ciclo <strong>while(true) -> ejecuta</strong> &amp; 
+                                    <strong>while(false) -> termina</strong>.</p>
+                                
+                                <p>En el siguiente ejemplo vamos a definir una variable <strong>texto</strong> como cadena de caracteres vacia.</p>
+          
+                                <pre class="">var texto = "";</pre>
+
+                                <p>Ahora vamos a escribir un programa que en cada iteracion del ciclo while va a ir agregando el caracter '<strong>a</strong>' a la variable 
+                                <strong>texto</strong> hasta que la longitud del mismo sea 50</p>
+                                
+                                <pre class="">var texto = ""
+while (texto.length < 50) {
+    texto += "a";
+}
+document.getElementById("demo").innerHTML = texto;</pre>
                                 <p>Valor de la variable <var>texto</var>: </p>
                                 <span id="posVar" class="badge">null</span>
                                 <br>
                                 <br>
-                                <button class="btn btn-default" type="submit" onclick="var text = ''; var i = 1; var contar = 10; while (i <= contar) { text += '<br>The number is ' + i; i++; } document.getElementById('posVar').innerHTML=text;">Ejecutar</button>
-
-                                <br>
-                                <br>
-                                <p>El Segundo ciclo, <strong>for</strong> se define usando la palabra reservada <strong>for</strong> de la siguiente manera:</p>
-                    
-                                <pre><strong>for</strong>([variable_de_recorrido ; condicion_de_variable; incremento_de_variable_de_recorrido ]) { [
-    Lista de instrucciones separadas por ejecutar] 
-} </pre>
-                         
-            
-                                    <p>De esta manera el ciclo <strong>for</strong> funciona con una estructura definida por un condicional, en este caso el condicional 
-                                        se define por medio de una variable que va a hacer un recorrido en un rango definido, y mediante un condicional se va a definir
-                                        el punto de finalizacion y partida asi como el incremento (positivo o negativo) de esta variable.</p>
-                                    
-                                    <p>Como ejemplo, suponga que definimos e inicializamos un arreglo <var>marcas</var>, el cual va a contener una lista de marcas
-                                        reconocidas de ropa y accesorios, por lo cual queremos listarlos para visualizar todos en una lista.</p>
-              
-                                    <pre class="">var marcas = ["Gucci", "D&amp;G", "Adidas", "Puma", "Ray-Ban", "Polo Club"];</pre>
-            
-                                    <p>Ahora vamos a escribir un programa que imprima todos los elementos de la lista <var>marcas</var> para exibirlos en una
-                                    lista que se mostrara al usuario.</p>
-                                    
-                                    <pre class="">
-var marcas = ["Gucci", "D&amp;G", "Adidas", "Puma", "Ray-Ban", "Polo Club"];
-var i;
-for (i = 0; i < cars.length; i++) {
-    text += marcas[i] + "&lt;br&gt;";
-}
-document.getElementById("demo").innerHTML = text;
-                                    </pre>
-                                    <p>Listar los items contenidos en <var>marca</var>: </p>
-                                    <table id="tablaItems" class="table table-dark">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Marca</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                            </tbody>
-                                    </table>
-                                    <br>
-                                    <button class="btn btn-default" type="submit" onclick="var table = document.getElementById('tablaItems'); var marcas = ['Gucci', 'D&amp;G', 'Adidas', 'Puma', 'Ray-Ban', 'Polo Club']; var i; for (i = 0; i < marcas.length; i++) { var row = table.insertRow(); var cell1 = row.insertCell(); cell1.innerHTML = marcas[i]; }">Listar</button>
+                                <button class="btn btn-default" type="submit" onclick="var texto = ''; while (texto.length < 50) { texto += 'a'; } document.getElementById('posVar').innerHTML = texto;">Ejecutar</button>
                                       
                     <h1>Ejemplo</h1>
                     
@@ -197,8 +183,8 @@ function draw() {
                             <li><a href="../02variables/index.html">Variables</a></li>
                             <li><a href="../03condicionales/index.html">Condicionales</a></li>
                             <li><a href="../04eventos/index.html">Eventos</a></li>
-                            <li><a href="../06ciclosX/index.html">Ciclos</a></li>
                             <li><a href="../05ejercicio/index.html">Reto</a></li>
+                            <li><a href="../06ciclos/index.html">Ciclos</a></li>
                         </ul>
                         <hr/>
                         <ul class="nav nav-pills nav-stacked" >
