@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>JS - Primeros pasos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<meta name="theme-color" content="#F7DD41">
+		<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+		<link rel="manifest" href="../favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
+		<script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="inner">
+
+					<!-- Logo -->
+					<a href="../index.html" class="logo">
+						<span class="symbol"><img src="../images/ipp5logo.png" alt="" /></span><span class="title logotypo">ipp5</span>
+					</a>
+
+					<!-- Nav -->
+					<nav>
+						<ul>
+							<li><a href="#menu">Menu</a></li>
+						</ul>
+					</nav>
+
+				</div>
+			</header>
+
+			<!-- Menu -->
+			<nav id="menu">
+				<h2>Menú</h2>
+				<ul>
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a href="../javascript/start.html">JavaScript</a></li>
+					<li><a href="../haskell/start.html">Haskell</a></li>
+					<!-- <li><a href="../pb/start.html">Programacion basica</a></li> -->
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<section>
+						
+						<h1>Javascript</h1>
+
+						<h2>Ciclos</h2>
+
+						<h3>Sentencia repetitiva de código.</h3>
+
+						<p align="justify">Los ciclos, bucles o sentencias repetitivas son fragmentos de código que se ejecutan varias veces hasta que la condición 
+							asignada a dicho ciclo sea cumplida, los dos tipos de bucles más utilizados en programación son el ciclo <strong>while</strong> y 
+							el ciclo <strong>for</strong>.</p>
+	
+						<p>El primer ciclo, <strong>for</strong> se define usando la palabra reservada <i><strong>for</strong></i> de la siguiente manera:</p>
+				
+						<pre><code><strong>for</strong>([variable_de_recorrido ; condicion_de_variable; incremento_de_variable_de_recorrido ]) { 
+	[Lista de instrucciones separadas por ejecutar] 
+} </code></pre>
+					
+	
+							<p>De esta manera el ciclo <strong>for</strong> funciona con una estructura definida en su cabecera mediante un condicional, en este caso el condicional 
+								se define inicialmente por medio de una variable que definirá un rango máximo, y mediante un contador que,
+								procesado mediante el condicional definirá la cantidad de ciclos que el ciclo <strong>for</strong> ejecutará.</p>
+							
+							<p>En el siguiente ejemplo suponga que definimos e inicializamos una variable texto <var>texto</var> con la cadena de caracteres vacia, 
+								y queremos realizar un ciclo que en cada iteracion le vaya agregando a esta variable, la misma mas un numero nuevo cada iteracion.</p>
+		
+							<p><code class=""><strong>var</strong> texto = "";</code></p>
+	
+							<p>Ahora vamos a escribir un programa que rellene a la variable <strong><var>texto</var></strong> con los numeros del rango de 5 a 25.</p>
+							
+							<pre class=""><code><strong>var</strong> texto = ""
+<strong>var</strong> i;
+<strong>for</strong> (i = 5; i <= 25; i++) {
+	texto += i + "&lt;br&gt;";
+}
+document.getElementById("demo").innerHTML = text;</code></pre>
+
+							<p>Valor de la variable <var>texto</var>:</p> <span id="demo" class="medalla">null</span>
+							<br>
+							<br>
+							<button class="btn btn-default" type="submit" onclick="var text = ''; var i; for (i = 5; i < 26; i++) {text += i + '&lt;br&gt;';} document.getElementById('demo').innerHTML = text;">Ejecutar</button>
+							<br>
+							<br>
+							<p>El segundo ciclo, <strong>while</strong> se define usando la palabra reservada <strong>while</strong> de la siguiente manera:</p>
+				
+						<pre><code><strong>while</strong>([Condición]) { 
+	[Lista de instrucciones separadas por ejecutar] 
+}</code></pre>
+					
+	
+							<p>De esta manera el ciclo <strong>while</strong> funciona con un unico condicional que permite ejecutar un bloque de código repetidas veces hasta que 
+								el condicional deje de satisfacerse. Es decir, si en el siguiente ciclo <strong>while(true) -> ejecuta</strong> &amp; 
+								<strong>while(false) -> termina</strong>.</p>
+							
+							<p>En el siguiente ejemplo vamos a definir una variable <strong>texto</strong> como cadena de caracteres vacia.</p>
+		
+							<p><code class=""><strong>var</strong> texto = "";</code></p>
+
+							<p>Ahora vamos a escribir un programa que en cada iteracion del ciclo while va a ir agregando el caracter '<strong>a</strong>' a la variable 
+							<strong>texto</strong> hasta que la longitud del mismo sea 50.</p>
+							
+							<pre class=""><code><strong>var</strong> texto = ""
+<strong>while</strong> (texto.length < 50) {
+	texto += "a";
+}
+document.getElementById("demo").innerHTML = texto;</code></50></pre>
+							<p>Valor de la variable <var>texto</var>: </p>
+							<span id="posVar" class="badge">null</span>
+							<br/>
+							<br/>
+							<button class="btn btn-default" type="submit" onclick="var texto = ''; while (texto.length < 50) { texto += 'a'; } document.getElementById('posVar').innerHTML = texto;">Ejecutar</button>
+							
+							<br/>	
+							<br/>
+							<h3>Ejemplo</h3>
+				
+							<p>Este ejemplo muestra nuestra mesa de billar.</p>
+				
+							<p>Intenta ejecutar las siguientes instrucciones en el programa descrito según lo aprendido:</p>
+				<!--
+Solucion
+function draw() {
+background(0, 180, 0);
+for(i = 0; i < 8; i++){
+	ellipse(posX + (i*20), posY, 20, 20);
+}
+}-->
+							<ul>
+								<li>Explique qué hace el ejemplo. </li>
+								<li>Usando un ciclo <code>for</code>, cree las 8 bolas de billar pertenecientes a la mesa.</li>
+								<li>Usando un ciclo <code>while</code>, cree las 8 bolas de billar pertenecientes a la mesa.</li>
+								<li>Ahora considere la función <code>Math.random();</code> retorna un número real aleatorio entre 0 y 1 para posicionar las mismas.
+									Considere el ejemplo en el que, la función <code>Math.floor</code> convierte un número real al entero anterior más cercano.
+									Entonces, usted puede calcular un número aleatorio entre 1 y 10 de la siguiente manera: <code>Math.floor((Math.random() * 10) + 1);</code></li>
+							</ul>
+				
+							<p><strong>Recuerda:</strong> siempre puedes restaurar el programa original oprimiendo el botón <strong>Restaurar</strong>. </p>
+
+							<div id="IDE">
+								<iframe id="exampleFrame" src="../assets/embeded.html" width="600" height="400"></iframe>
+								<div id="myContainer"></div>
+								<hr/>
+								<button class="btn btn-default" type="submit" onclick="ejecutar(editor, '#exampleFrame')">Ejecutar</button>
+								<button class="btn btn-default" type="submit" onclick="restaurar('ciclos/sketch.js', editor)">Restaurar</button>
+								<br/><br/>
+		
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h3 class="panel-title">Código de ejemplo</h3>
+									</div>
+									<div class="panel-body">
+										<div id="editor" class="editor-mediano"></div>
+									</div>
+								</div>
+							</div>
+
+					</section>
+				</div>						
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="copyright">
+						<li>&copy; IPP5. 2017 Todos los derechos reservados</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> &amp; Tunned by Johan Peña Designs.</li>
+					</ul>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="../assets/js/main.js"></script>
+		<!-- Scripts compilador -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="../js/vendor/bootstrap.min.js"></script>
+
+        <script src="../js/main.js"></script>
+
+        <script src="../js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+                            var editor = ace.edit("editor");
+                            editor.setTheme("ace/theme/github");
+                            editor.getSession().setMode("ace/mode/javascript");
+                            iniciarCanvas(editor, "#exampleFrame")
+                            restaurar("ciclos/sketch.js", editor);
+        </script>
+
+	</body>
+</html>

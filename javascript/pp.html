@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>JS - Primeros pasos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<meta name="theme-color" content="#F7DD41">
+		<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+		<link rel="manifest" href="../favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
+		<script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="inner">
+
+					<!-- Logo -->
+					<a href="../index.html" class="logo">
+						<span class="symbol"><img src="../images/ipp5logo.png" alt="" /></span><span class="title logotypo">ipp5</span>
+					</a>
+
+					<!-- Nav -->
+					<nav>
+						<ul>
+							<li><a href="#menu">Menu</a></li>
+						</ul>
+					</nav>
+
+				</div>
+			</header>
+
+			<!-- Menu -->
+			<nav id="menu">
+				<h2>Menú</h2>
+				<ul>
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a href="../javascript/start.html">JavaScript</a></li>
+					<li><a href="../haskell/start.html">Haskell</a></li>
+					<!-- <li><a href="../pb/start.html">Programacion basica</a></li> -->
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<section>
+						<h1>Javascript</h1>
+						<h2>Primeros Pasos</h2>
+						<h3>Introduccion a los computadores.</h3>
+						<p align="justify">Los computadores son máquinas construidas para realizar cálculos de manera automática. Los primeros computadores eran lentos y de baja capacidad, 
+							construidos con elementos electromecánicos y con tubos de vacio. Luego, con el surgimiento de los transistores y la tecnología de estado sólido 
+							(es decir los chips electrónicos), los computadores se hicieron más pequeños, potentes y eficientes. Hoy en día el celular que llevan en sus bolsillos 
+							es millones de veces más potente que los primeros computadores.</p>
+						<p>El computador tiene tres componentes escenciales: Procesador, Memoria y los dispositivos de entrada y salida.</p>
+						<ul>
+							<li>El procesador es el que se encarga de realizar los cálculos.</li>
+							<li>La memoria almacena los resultados. </li>
+							<li align="justify">Los dispositivos de entrada y salida me sirven para leer datos, mostrar resultados al usuario, y enviar mensajes. Ejemplos de dispositivos 
+								de entrada y salida son: la pantalla, el teclado, el mouse y la tarjeta de red que me permite enviar y recibir datos sobre internet.</li>
+						</ul>
+
+						<h3>Lenguajes de programacion.</h3>
+
+						<p align="jusitfy">Los lenguajes de programación son lenguajes con sintaxis y gramáticas definidas, que permiten a los programadores darle instrucciones a los 
+							computadores.</p>
+						<p align="jusitfy">En este tutorial utilizaremos un lenguaje de programación denominado <strong>JavaScript</strong>. Hay muchos otros lenguajes que puedes 
+							aprender, como <strong>Haskell</strong>, <strong>Java</strong>, <strong>Phyton</strong>, <strong>C++</strong> entre otros.</p>
+
+						<p align="jusitfy">La sintaxis del lenguaje es muy simple. Por ejemplo, para invocar una función que muestra un cuadro de texto con una alerta, puedo escribir:</p>
+
+						<p><code>alert("Revisa el clima antes de salir");</code></p>
+
+						<a class="button special" onclick="alert('Revisa el clima antes de salir');">Ejecutar</a>
+
+						<p align="justify">La instrucción anterior invoca la función <code>alert(mensaje)</code> y le pasa como valor del parámetro <var>mensaje</var> la cadena 
+							de caracteres <code>"Revisa el clima antes de salir"</code>. <strong>No olvides escribir un <code>;</code> al final de cada instrucción</strong>.</p>
+
+						<h3>Librerías de funciones</h3>
+
+						<p align="justify">Generalmente los lenguajes proveen conjuntos de funciones que permiten hacer acciones sofisticadas como dibujar gráficos, crear música y enviar 
+							mensajes de correo. Estas funcionalidades se agrupan en <strong> librerías</strong>. Para este tutorial utilizaremos la librería de gráficos y 
+							sonidos denominada <strong>P5.js</strong>.</p>
+
+						<p align="justify">Esta librería provee funciones para dibujar círculos, triángulos, rectángulos y otras que exploraremos más adelante. Un ejemplo de como invocar una 
+							de estas funciones para pintar un círculo es el siguiente:</p>
+
+						<code class="">ellipse(50, 50, 100, 100);</code>
+
+						<br/>
+						<br/>
+
+						<p align="justify">La sintaxis de la función es la siguiente <code class="">ellipse(x, y, ancho, alto);</code>. Donde los parámetros 
+							<strong><var>x</var></strong> y <strong><var>y</var></strong> representan el centro de la elipse, y los parámetros 
+							<strong><var>ancho</var></strong> y <strong><var>alto</var></strong> representan el ancho y el alto de la elipse. Si los 
+							parámetros de <strong><var>ancho</var></strong> y <strong><var>alto</var></strong> son iguales se dibujará un círculo. 
+							Los valores se dan en pixeles, un pixel es un punto en la pantalla (más sobre esto en la siguiente sección).</p>
+
+						<p>Otras funciones disponibles son:</p>
+
+						<ul>
+							<li><code>createCanvas(ancho, alto);</code> crea un lienzo para realizar los dibujos con el ancho y alto especificados en 
+								<var>ancho</var> y <var>alto</var>. <strong>En el lienzo, las cordenadas en el eje <var>x</var> se miden desde 
+									la esquina superior izquierda hacia la derecha y las cordenadas en el eje <var>y</var> se miden desde 
+									la esquina superior izquierda hacia abajo.</strong></li>
+							<li><code>line(x1, y1, x2, y2);</code> dibuja una línea entre los puntos <strong><var>(x1, y1)</var></strong> y 
+								<strong><var>(x2, y2)</var></strong>.</li>
+							<li><code>rect(x,y, ancho, alto);</code> dibuja un rectángulo con la esquina superior izquierda en <strong><var>(x, y)</var></strong> y 
+								con ancho y alto especificado en los parámetros <var>ancho, alto</var>.</li>
+							<li><code>triangle(x1,y1,x2,y2,x3,y3);</code> dibuja un triángulo entre los puntos puntos <strong><var>(x1, y1)</var></strong>, 
+								<strong><var>(x2, y2)</var></strong> <strong><var>(x3, y3)</var>.</strong></li>
+							<li><code>background(rojo, verde, azul);</code> cambia el color del lienzo con un color que es la combinación 
+								de los niveles de rojo, verde y azul especificados en los parámetros respectivos. Cada parámetro puede ser una varlor de 
+								<strong>0</strong> a <strong>255.</strong></li>
+						</ul>
+
+						<h3>Definiendo funciones</h3>
+
+						<p alig="justify">Ahora vamos a realizar programas. Para poder utilizar las funciones de la libarería gráfica deberas escribir las instrucciones
+							al interior de dos funciones definidas por usted: <i><var>setup</var></i> y <i><var>draw</var></i>.</p>
+		
+						<p>Estas funciones son invocadas de la siguiente manera cada vez que usted oprime 
+							el boton ejecutar:</p>
+						<ul>
+							<li>La función <strong>setup</strong> se invoca al principio, una sola vez, despues de oprimir el boton <strong>Ejecutar</strong>.</li>
+							<li>La función <strong>draw</strong> se invoca idefinidamente de manera continua (muchas veces por segundo), despues de ejecutar la función <strong>setup</strong>.
+								Cuando realizemos animaciones usted verá la utilidad de que esta función se repita de manera idefinida.</li>
+						</ul>
+						
+						<p>Una función se define usando la palabra reservada <strong>function</strong> de la siguiente manera:</p>
+						
+						<code><strong>function</strong> [Nombre de la función] ( [Lista de parámetros] ) { [Lista de instrucciones separadas por ;] } </code>
+
+						<br/>
+						<br/>
+						
+						<p>Por ejemplo, si deseo dibujar un círculo puedo escribir el siguiente programa:</p>
+						
+						<pre>
+							<code><strong>function</strong> setup() {
+	createCanvas(600, 400);
+}
+
+<strong>function</strong> draw() {
+	ellipse(300, 300, 100, 100);
+}</code></pre>
+						
+						
+						<p>Observe que las dos funciones definidas no tienen parámetros, 
+							es decir que cuando las invocan no necesitan ningún valor en el paréntesis.</p>
+						
+						<p>Cuando se ejecuta este programa, primero se ejecutan una sola vez las instrucciones definidas en la función 
+							<strong>setup</strong> y luego se ejecutan indefinidamente las instrucciones definidas en la función 
+						<strong>draw</strong>. Así, primero se crea un lienzo de 600x400 pixeles y luego se dibuja un círculo con centro en 
+						las cordenadas (300,300) y de ancho 100 y alto 100 (recuerde que todos los números se refieren a pixeles).</p>
+						
+						<h3>Mi primer programa</h3>
+						
+						Ahora intenta realizar lo siguiente en el programa descrito a continuación:
+						<ul>
+							<li>Lee el programa e intente explicarlo.</li>
+							<li>Mueva los círculos de posición.</li>
+							<li>Cambie el tamaño de los círculos.</li>
+							<li>Dibuje una línea, un rectángulo y un triangulo.</li>
+		
+						</ul>
+						
+						<p><strong>Recuerda:</strong> siempre puedes restaurar el programa original oprimiendo el botón <strong>Restaurar</strong>. </p>
+
+						<div id="IDE">
+							<iframe id="exampleFrame" src="../assets/embeded.html" width="600" height="400"></iframe>
+							<div id="myContainer"></div>
+							<hr/>
+							<button class="btn btn-default" type="submit" onclick="ejecutar(editor, '#exampleFrame')">Ejecutar</button>
+							<button class="btn btn-default" type="submit" onclick="restaurar('pp/sketch.js', editor)">Restaurar</button>
+							<br/><br/>
+	
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Código de ejemplo</h3>
+								</div>
+								<div class="panel-body">
+									<div id="editor" class="editor-pequeno"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>						
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="copyright">
+						<li>&copy; IPP5. 2017 Todos los derechos reservados</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> &amp; Tunned by Johan Peña Designs.</li>
+					</ul>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="../assets/js/main.js"></script>
+		<!-- Scripts compilador -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="../js/vendor/bootstrap.min.js"></script>
+
+        <script src="../js/main.js"></script>
+
+        <script src="../js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+                            var editor = ace.edit("editor");
+                            editor.setTheme("ace/theme/github");
+                            editor.getSession().setMode("ace/mode/javascript");
+                            iniciarCanvas(editor, "#exampleFrame")
+                            restaurar("pp/sketch.js", editor);
+        </script>
+
+	</body>
+</html>
