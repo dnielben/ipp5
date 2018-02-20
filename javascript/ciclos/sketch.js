@@ -8,6 +8,6 @@ function setup() {
 }
 
 function draw() {
-  background(0, 180, 0);
+  background(150, 180, 0);
   ellipse(posX, posY, 20, 20);
 }

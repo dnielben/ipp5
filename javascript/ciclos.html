@@ -120,15 +120,15 @@ document.getElementById("demo").innerHTML = text;</code></pre>
 }</code></pre>
 					
 	
-							<p>De esta manera el ciclo <strong>while</strong> funciona con un único condicional que permite ejecutar un bloque de código repetidas veces hasta que 
+							<p>De esta manera el ciclo <strong>while</strong> funciona con un unico condicional que permite ejecutar un bloque de código repetidas veces hasta que 
 								el condicional deje de satisfacerse. Es decir, si en el siguiente ciclo <strong>while(true) -> ejecuta</strong> &amp; 
 								<strong>while(false) -> termina</strong>.</p>
 							
-							<p>En el siguiente ejemplo vamos a definir una variable <strong>texto</strong> como cadena de caracteres vacía.</p>
+							<p>En el siguiente ejemplo vamos a definir una variable <strong>texto</strong> como cadena de caracteres vacia.</p>
 		
 							<p><code class=""><strong>var</strong> texto = "";</code></p>
 
-							<p>Ahora vamos a escribir un programa que en cada iteracion del ciclo while va a ir agregando el carácter '<strong>a</strong>' a la variable 
+							<p>Ahora vamos a escribir un programa que en cada iteracion del ciclo while va a ir agregando el caracter '<strong>a</strong>' a la variable 
 							<strong>texto</strong> hasta que la longitud del mismo sea 50.</p>
 							
 							<pre class=""><code><strong>var</strong> texto = ""
@@ -137,7 +137,7 @@ document.getElementById("demo").innerHTML = text;</code></pre>
 }
 document.getElementById("demo").innerHTML = texto;</code></50></pre>
 							<p>Valor de la variable <var>texto</var>: </p>
-							<span id="posVar" class="badge">null</span>
+							<span id="posVar" class="medalla">null</span>
 							<br/>
 							<br/>
 							<button class="btn btn-default" type="submit" onclick="var texto = ''; while (texto.length < 50) { texto += 'a'; } document.getElementById('posVar').innerHTML = texto;">Ejecutar</button>
@@ -169,7 +169,7 @@ for(i = 0; i < 8; i++){
 							<p><strong>Recuerda:</strong> siempre puedes restaurar el programa original oprimiendo el botón <strong>Restaurar</strong>. </p>
 
 							<div id="IDE">
-								<iframe id="exampleFrame" src="../assets/embeded.html" width="600" height="400"></iframe>
+								<iframe id="exampleFrame" src="../assets/embeded.html" width="600" height="400" style="width: 100%"></iframe>
 								<div id="myContainer"></div>
 								<hr/>
 								<button class="btn btn-default" type="submit" onclick="ejecutar(editor, '#exampleFrame')">Ejecutar</button>
@@ -180,7 +180,7 @@ for(i = 0; i < 8; i++){
 									<div class="panel-heading">
 										<h3 class="panel-title">Código de ejemplo</h3>
 									</div>
-									<div class="panel-body">
+									<div class="panel-body" style="width: 100%">
 										<div id="editor" class="editor-mediano"></div>
 									</div>
 								</div>

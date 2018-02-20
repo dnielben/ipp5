@@ -100,9 +100,9 @@
 <strong>if</strong>(pos >= 305){velocidad = velocidad * (-1);}
 <strong>if</strong>(pos <= 295){velocidad = velocidad * (-1);}</code></pre>
 
-						<p>Valor de la variable <var>pos</var>: <span id="posVar" class="badge">300</span></p>
+						<p>Valor de la variable <var>pos</var>: <span id="posVar" class="medalla">300</span></p>
 						
-						<p>Valor de la variable <var>velocidad</var>: <span id="velVar" class="badge">1</span></p> 
+						<p>Valor de la variable <var>velocidad</var>: <span id="velVar" class="medalla">1</span></p> 
 						
 						<a class="button special" onclick="pos = pos + velocidad;if(pos >= 305){velocidad = velocidad * (-1);}if(pos <= 295){velocidad = velocidad * (-1);}document.getElementById('posVar').innerHTML=pos;document.getElementById('velVar').innerHTML=velocidad;">Ejecutar</a>
 						
@@ -124,7 +124,7 @@
 						<p><strong>Recuerda:</strong> siempre puedes restaurar el programa original oprimiendo el botón <strong>Restaurar</strong>.</p>
 
 						<div id="IDE">
-							<iframe id="exampleFrame" src="../assets/embeded.html" width="600" height="400"></iframe>
+							<iframe id="exampleFrame" src="../assets/embeded.html" width="600" height="400" style="width: 100%"></iframe>
 							<div id="myContainer"></div>
 							<hr/>
 							<button class="btn btn-default" type="submit" onclick="ejecutar(editor, '#exampleFrame')">Ejecutar</button>
@@ -135,7 +135,7 @@
 								<div class="panel-heading">
 									<h3 class="panel-title">Código de ejemplo</h3>
 								</div>
-								<div class="panel-body">
+								<div class="panel-body" style="width: 100%">
 									<div id="editor" class="editor-mediano"></div>
 								</div>
 							</div>
