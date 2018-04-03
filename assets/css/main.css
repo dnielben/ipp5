@@ -3406,9 +3406,14 @@
 		}
 
 	.editor-grande { 
-			min-height: 500px; 
-			width: auto
-		}      
+		min-height: 500px; 
+		width: auto
+	}
+		
+	.editor-hs { 
+		min-height: 200px; 
+        width: auto
+	}
 
 	.affix {
 		top: 60px;
