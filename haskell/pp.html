@@ -97,49 +97,59 @@
 			<section>
 
 				<h1>Haskell</h1>
+				<h2>Declarando e inicializando variables.</h2>
+				<p>Para almacenar valores en memoria los lenguajes de programación usan variables que pueden ser de tipo numérico, booleano, cadena o estructuras de datos.<br>
+					Una variable se define en Haskell de la siguiente manera:<br>
+					<code> Nombre_de_la_variable = Valor inicial de la variable </code><br>
+					Para poder visualizar en cosola el contenido de la variable se utiliza la funcion <code> show(Nombre_de_la_variable) </code><br>
+				</p>
 
-				<h2>Operaciones</h2>
-
+				<h2>Operaciones entre variables</h2>
 				<p align="justify">Haskell permite hacer operaciones aritméticas, booleanas y algunas otras funciones predefinidas por Haskell</p>
 
 				<h3>Operaciones Aritméticas</h3>
 				<p align="justify"></p>
-				<p>En Haskell se pueden realizar todas las operaciones aritméticas básicas (+, -, * , /, ^):</p>
-				<p>Suma: <code>x+y</code></p>
-				<p>Resta: <code>x-y</code></p>
-				<p>Multiplicación: <code>x*y</code></p>
-				<p>División(cociente x entre y): <code>x/y</code></p>
-				<p>Potencia(x elevado a y): <code>x^y</code></p>
+				<p>En Haskell se pueden realizar todas las operaciones aritméticas básicas (+, -, * , /, ^):<br>
+					Suma: <code>x<strong>+</strong>y</code><br>
+					Resta: <code>x<strong>-</strong>y</code><br>
+					Multiplicación: <code>x<strong>*</strong>y</code><br>
+					División(cociente x entre y): <code>x<strong>/</strong>y</code><br>
+					Potencia(x elevado a y): <code>x<strong>^</strong>y</code><br>
+				</p>
 
 				<h3>Operaciones Booleanas</h3>
 				<p align="justify"></p>
 				<p>Estas operaciones pueden devolver dos constantes booleanas que pueden ser <code>True</code> o <code>False</code></p>
+				<p>Los siguientes operadores se utilizan entre dos variables booleanas (&&, ||, /= , ==):<br>
+					AND(conjunción de x e y): <code>x<strong>&&</strong>y</code><br>
+					OR(disyunción de x e y): <code>x<strong>||</strong>y</code><br>
+					NOT(negación logica de x): <code><strong>not</strong> x</code><br>
+				</p>
 
-				<p>Los siguientes operadores se utilizan entre dos variables booleanas (&&, ||, /= , ==)</p>
-				<p>AND(conjunción de x e y): <code>x&&y</code></p>
-				<p>OR(disyunción de x e y): <code>x||y</code></p>
-				<p>NOT(negación logica de x): <code>not x</code></p>
+				<p>Los siguientes operadores se utilizan entre dos variables numericas (<, >, <=, >=, ==, /= ):<br>
+					Menor que(x menor que y): <code>x<strong><</strong>y</code><br>
+					Mayor que(x mayor que y): <code>x<strong>></strong>y</code><br>
+					Menor o igual que(x menor o igual que y): <code>x<strong><=</strong>y</code><br>
+					Mayor o igual que(x mayor o igual que y): <code>x<strong>>=</strong>y</code><br>
+				</p>
 
-				<p>Los siguientes operadores se utilizan entre dos variables numericas (<, >, <=, >=, ==, /= )</p>
-				<p>Menor que(x menor que y)<code>x< y</code></p>
-				<p>Mayor que(x mayor que y)<code>x>y</code></p>
-				<p>Menor o igual que(x menor o igual que y): <code>x<=y</code></p>
-				<p>Mayor o igual que(x mayor o igual que y): <code>x>=y</code></p>
-
-				<p>Los operadores == y /= se pueden utilizar tanto para variables booleanas como variables numéricas<code>x/=y</code></p>
-				<p>Diferencia de variables(verifica si x es diferente de y): <code>x/=y</code></p>
-				<p>Igualdad de variables(verifica si x es igual a y) <code>x==y</code></p>
+				<p>Los operadores == y /= se utilizan tanto para variables booleanas como variables numéricas y cadenas:<br>
+					Diferencia de variables(verifica si x es diferente de y): <code>x<strong>/=</strong>y</code><br>
+					Igualdad de variables(verifica si x es igual a y): <code>x<strong>==</strong>y</code><br>
+				</p>
 
 				<h3>Operaciones Predefinidas</h3>
 				<p align="justify"></p>
-				<p>El redondeo de x al entero más cercano: <code>round x</code></p>
-				<p>El resto de x entre y: <code>mod x y</code></p>
-				<p>Máximo entre dos números: <code>max x y</code> asi mismo el Mínimo entre dos números: <code>min x y</code></p>
-				<p>División entera de x entre y: <code>div x y</code></p>
-				<p>Absoluto de un número: <code>abs x</code></p>
-				<p>Verifica si el número es par: <code>even x</code></p>
-				<p>Verifica si el número es impar: <code>odd x</code></p>
-				<p>El máximo común divisor de dos números <code>gcd x y</code></p>
+				<p>El redondeo de x al entero más cercano: <code>round x</code><br>
+					El resto de x entre y: <code><strong>mod</strong> x y</code><br>
+					Máximo entre dos números: <code><strong>max</strong> x y</code> <br>
+					Mínimo entre dos números: <code><strong>min</strong> x y</code><br>
+					División entera de x entre y: <code><strong>div</strong> x y</code><br>
+					Absoluto de un número: <code><strong>abs</strong> x</code><br>
+					Verifica si el número es par: <code><strong>even</strong> x</code><br>
+					Verifica si el número es impar: <code><strong>odd</strong> x</code><br>
+					El máximo común divisor de dos números: <code><strong>gcd</strong> x y</code><br>
+				</p>
 
 
 				<hr/>
@@ -156,6 +166,7 @@
 				</div>
 				<iframe style="width: 50%; height: 800px; float:left" src="http://localhost:2222/ssh/host/192.168.0.6"></iframe>
 
+			</section>
 		</div>
 	</div>
 

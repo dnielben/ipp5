@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ac43bc-7623-4c11-a083-fd335f535b1a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/haskell/Listas.html" afterPath="$PROJECT_DIR$/haskell/Listas.html" />
       <change beforePath="$PROJECT_DIR$/haskell/pp.html" afterPath="$PROJECT_DIR$/haskell/pp.html" />
-      <change beforePath="$PROJECT_DIR$/haskell/start.html" afterPath="$PROJECT_DIR$/haskell/start.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="start.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="start.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/haskell/start.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="87" column="72" lean-forward="false" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
+            <state relative-caret-position="0">
+              <caret line="66" column="44" lean-forward="false" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -38,8 +37,8 @@
       <file leaf-file-name="pp.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/haskell/pp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="854">
-              <caret line="141" column="52" lean-forward="false" selection-start-line="141" selection-start-column="52" selection-end-line="141" selection-end-column="52" />
+            <state relative-caret-position="208">
+              <caret line="132" column="100" lean-forward="true" selection-start-line="132" selection-start-column="100" selection-end-line="132" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -65,11 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Listas.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Listas.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/haskell/Listas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="83" column="43" lean-forward="false" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+            <state relative-caret-position="327">
+              <caret line="152" column="0" lean-forward="true" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="memoria.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/memoria.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="110" column="29" lean-forward="true" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -78,7 +87,7 @@
       <file leaf-file-name="Funciones.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/haskell/Funciones.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
+            <state relative-caret-position="558">
               <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
               <folding />
             </state>
@@ -100,16 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1479">
               <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generic.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generic.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,12 +140,12 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/haskell/Tipos.html" />
         <option value="$PROJECT_DIR$/haskell/Recursion.html" />
-        <option value="$PROJECT_DIR$/haskell/Listas.html" />
         <option value="$PROJECT_DIR$/haskell/Funciones.html" />
         <option value="$PROJECT_DIR$/haskell/consola.html" />
         <option value="$PROJECT_DIR$/haskell/condicionales.html" />
-        <option value="$PROJECT_DIR$/haskell/pp.html" />
         <option value="$PROJECT_DIR$/haskell/start.html" />
+        <option value="$PROJECT_DIR$/haskell/pp.html" />
+        <option value="$PROJECT_DIR$/haskell/Listas.html" />
       </list>
     </option>
   </component>
@@ -194,6 +193,11 @@
               <item name="ipp5" type="462c0819:PsiDirectoryNode" />
               <item name="haskell" type="462c0819:PsiDirectoryNode" />
               <item name="consola" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipp5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipp5" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,12 +329,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523980612513</updated>
-      <workItem from="1524499086406" duration="3855000" />
+      <workItem from="1524499086406" duration="22596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3855000" />
+    <option name="totallyTimeSpent" value="22596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
@@ -607,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/memoria.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="82" column="43" lean-forward="false" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/condicionales.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
@@ -660,14 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haskell/Funciones.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/haskell/consola.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
@@ -692,26 +681,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haskell/Listas.html">
+    <entry file="file://$PROJECT_DIR$/haskell/start.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="83" column="43" lean-forward="false" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+        <state relative-caret-position="0">
+          <caret line="66" column="44" lean-forward="false" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haskell/Funciones.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/memoria.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="110" column="29" lean-forward="true" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/haskell/pp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="141" column="52" lean-forward="false" selection-start-line="141" selection-start-column="52" selection-end-line="141" selection-end-column="52" />
+        <state relative-caret-position="208">
+          <caret line="132" column="100" lean-forward="true" selection-start-line="132" selection-start-column="100" selection-end-line="132" selection-end-column="100" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haskell/start.html">
+    <entry file="file://$PROJECT_DIR$/haskell/Listas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="87" column="72" lean-forward="false" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
+        <state relative-caret-position="327">
+          <caret line="152" column="0" lean-forward="true" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding />
         </state>
       </provider>
