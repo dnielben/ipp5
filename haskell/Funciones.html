@@ -83,7 +83,6 @@
 						<a href="../haskell/start.html">Inicio</a>
 						<a href="../haskell/pp.html">Primeros Pasos</a>
 						<a href="../haskell/Listas.html">Listas</a>
-						<a href="../haskell/condicionales.html">Condicionales</a>
 						<a href="../haskell/Funciones.html">Funciones</a>
 						<a href="../haskell/Recursion.html">Recursion</a>
 					</div>
@@ -98,16 +97,32 @@
 
 						<h1>Haskell</h1>
 
-						<h2>Consola</h2>
+						<h2>Funciones en Haskell</h2>
 
-						<p align="justify">A continuación puedes probar nuestra consola en tiempo real que te permitirá ejecutar código Haskell en
-							linea, podrás crear proyectos y archivos con tu usuario que se podrán ejecutar en la consola 'stack' de Haskell
-							ingresando el comando 'stack ghci' en la linea de comandos, intentalo!</p>
+						<p align="justify">
+							Como sabemos Haskell es un lenguaje de programacion funcional, de ahi mismo partimos que solo utiliza funciones para resolver problemas. Nosotros deberiamos estar familiarizados con la
+							definicion matematica de una funcion, sabiendo que una función (f) es una relación entre un conjunto dado X y otro conjunto Y de forma que cada elemento x ϵ X le corresponda un único
+							elemento f(x) del conjunto Y. En haskell se pueden representar estas funciones (f) y lo enseñaremos a continuacion.
+
+						</p>
+
+						<h3>Funciones y tipos</h3>
+						<p>Para definir una funcion tanto de forma de lenguaje natural o en sintaxis de Haskel se debe definir primero el conjutno de entrada X y el conjunto de salida Y de la funcion f(X).
+						</p>
+						<p>Un ejemplo simple de una funcion en Haskell seria f: N → N, f(x)=x*2  con un conjunto de entrada de numeros Naturales y de salida de numeros Naturales, esta funcion se define de la siguiente manera.<br>
+							<code>Nombre_de_la_funcion <strong>:: Integer -> Integer</strong></code><br>
+							Y la funcion definida seria f(x)=x*2:<br>
+							<code>Nombre_de_la_funcion x = x*2 </code><br>
+							Hay que tener ecuenta que hay que definir cada conjunto de entrada en este caso como el conjunto de entrada es solo x solo se define un Integer en caso de tener una funcion como esta f(x,y)=x+y
+							como hay diferentes tipos de datos podemos definir un tipo de funcion como:
+							<code>Nombre_de_la_funcion <strong>:: String -> Integer</strong></code><br>
+							<code>Nombre_de_la_funcion <strong>:: Char -> Integer</strong></code><br>
+						</p>
+
+						<p>Una lista en cualquier lenguaje de programación es definida como una estructura de datos que representa un conjunto de datos del
+							mismo tipo ya sea numerico, cadena, booleano o listas de listas.</p>
 
 						<hr/>
-						<div class="panel-heading">
-							<h3 class="panel-title">Prueba codigo en consola</h3>
-						</div>
 
 						<div id="IDE" style="width: 50%; height: 800px; float:left">
 							<div class="panel panel-default">
