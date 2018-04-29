@@ -106,32 +106,33 @@
 
 						</p>
 
-						<h3>Funciones y tipos</h3>
+						<h3>Funciones</h3>
 						<p>Para definir una funcion tanto de forma de lenguaje natural o en sintaxis de Haskel se debe definir primero el conjutno de entrada X y el conjunto de salida Y de la funcion f(X).
 						</p>
-						<p>Un ejemplo simple de una funcion en Haskell seria f: N → N, f(x)=x*2  con un conjunto de entrada de numeros Naturales y de salida de numeros Naturales, esta funcion se define de la siguiente manera.<br>
-							<code>Nombre_de_la_funcion <strong>:: Integer -> Integer</strong></code><br>
-							Y la funcion definida seria f(x)=x*2:<br>
-							<code>Nombre_de_la_funcion x = x*2 </code><br>
-							Hay que tener ecuenta que hay que definir cada conjunto de entrada en este caso como el conjunto de entrada es solo x solo se define un Integer en caso de tener una funcion como esta f(x,y)=x+y
-							como hay diferentes tipos de datos podemos definir un tipo de funcion como:
-							<code>Nombre_de_la_funcion <strong>:: String -> Integer</strong></code><br>
-							<code>Nombre_de_la_funcion <strong>:: Char -> Integer</strong></code><br>
+
+						<p>Empezaremos con las funciones mas basicas en Haskell.
+							Un ejemplo simple de una funcion en Haskell seria f: N → N, f(x)=x*3  con un conjunto de entrada y de salida de numeros Naturales, esta funcion se define de la siguiente manera.<br>
+							Y la funcion definida seria f(x)=x*3 que recibe un numero y lo multiplica por 3:<br>
+							<code>Nombre_de_la_funcion x = x*3 </code> para probar la funcion solo se llama y se le asignan los parametros de entrada <code>Nombre_de_la_funcion 5</code><br>
 						</p>
+						<p>
+							Ahora vamos a crear una función que multiplique un número por 2 pero solo si ese número es menor o igual que 50<br>
+							<code>Nombre_de_la_fucion x = if x <= 50 then x*2 else x </code><br>
+							Una ejemplo de una funcion que diga si un numero x es menor, mayor o igual que otro numero y.<br>
+							<code>Nombre_de_la_funcion x y= if x < y then x++" menor que "++y else if x > y then x++" mayor que "++y else x++" igual que "++y</code><br>
+							Para probar la funcion se escribe el nombre y los parametros de la funcion <code>Nombre_de_la_funcion "5" "5"</code>
+						</p>
+						<iframe src="http://35.167.3.67:4001/#jquery-console-prompt-label" class="consola"></iframe>
 
-						<p>Una lista en cualquier lenguaje de programación es definida como una estructura de datos que representa un conjunto de datos del
-							mismo tipo ya sea numerico, cadena, booleano o listas de listas.</p>
 
-						<hr/>
-
-						<div id="IDE" style="width: 50%; height: 800px; float:left">
+						<!--div id="IDE" style="width: 50%; height: 800px; float:left">
 							<div class="panel panel-default">
 								<div class="panel-body" style="width: 100%; height: 100%">
 									<div id="editor" class="editor-grande"></div>
 								</div>
 							</div>
 						</div>
-						<iframe style="width: 50%; height: 800px; float:left" src="http://localhost:2222/ssh/host/192.168.0.6"></iframe>
+						<iframe style="width: 50%; height: 800px; float:left" src="http://localhost:2222/ssh/host/192.168.0.6"></iframe-->
 
 				</div>
 			</div>

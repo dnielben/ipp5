@@ -108,12 +108,14 @@
 
 				<h3>Operaciones Aritméticas</h3>
 				<p align="justify"></p>
+
 				<p>En Haskell se pueden realizar todas las operaciones aritméticas básicas (+, -, * , /, ^):<br>
+					Primero declararemos dos variables numericas x e y:<code>x=5</code>  <code>y=3</code><br>
 					Suma: <code>x<strong>+</strong>y</code><br>
 					Resta: <code>x<strong>-</strong>y</code><br>
 					Multiplicación: <code>x<strong>*</strong>y</code><br>
-					División(cociente x entre y): <code>x<strong>/</strong>y</code><br>
-					Potencia(x elevado a y): <code>x<strong>^</strong>y</code><br>
+					División (cociente x entre y): <code>x<strong>/</strong>y</code><br>
+					Potencia (x elevado a y): <code>x<strong>^</strong>y</code><br>
 				</p>
 
 				<iframe src="http://35.167.3.67:4001/#jquery-console-prompt-label" class="consola"></iframe>
@@ -122,6 +124,7 @@
 				<p align="justify"></p>
 				<p>Estas operaciones pueden devolver dos constantes booleanas que pueden ser <code>True</code> o <code>False</code></p>
 				<p>Los siguientes operadores se utilizan entre dos variables booleanas (&&, ||, /= , ==):<br>
+					Primero declararemos dos variables booleanas x e y:<code>x=True</code>  <code>y=False</code><br>
 					AND(conjunción de x e y): <code>x<strong>&&</strong>y</code><br>
 					OR(disyunción de x e y): <code>x<strong>||</strong>y</code><br>
 					NOT(negación logica de x): <code><strong>not</strong> x</code><br>
@@ -130,6 +133,7 @@
 				<iframe src="http://35.167.3.67:4001/#jquery-console-prompt-label" class="consola"></iframe>
 
 				<p>Los siguientes operadores se utilizan entre dos variables numericas (<, >, <=, >=, ==, /= ):<br>
+					Primero declararemos dos variables numericas x e y:<code>x=(-3.2)</code>  <code>y=0</code><br>
 					Menor que(x menor que y): <code>x<strong><</strong>y</code><br>
 					Mayor que(x mayor que y): <code>x<strong>></strong>y</code><br>
 					Menor o igual que(x menor o igual que y): <code>x<strong><=</strong>y</code><br>
@@ -138,16 +142,19 @@
 
 				<iframe src="http://35.167.3.67:4001/#jquery-console-prompt-label" class="consola"></iframe>
 
-				<p>Los operadores == y /= se utilizan tanto para variables booleanas como variables numéricas y cadenas:<br>
+				<p>Los operadores == y /= se utilizan tanto para variables booleanas como variables numéricas y cadenas pero hay que tener ecuenta que las variables que se van a comparar
+					tienen que ser ambas del mismo tipo:<br>
+					Primero declararemos dos variables del mismo tipo en este caso seran numericas x e y:<code>x=3</code>  <code>y=3</code><br>
 					Diferencia de variables(verifica si x es diferente de y): <code>x<strong>/=</strong>y</code><br>
-					Igualdad de variables(verifica si x es igual a y): <code>x<strong>==</strong>y</code><br>
+					Igualdad de variables(verifica si x es igual a y): <code>y<strong>==</strong>x</code><br>
 				</p>
 
 				<iframe src="http://35.167.3.67:4001/#jquery-console-prompt-label" class="consola"></iframe>
 
 				<h3>Operaciones Predefinidas</h3>
 				<p align="justify"></p>
-				<p>El redondeo de x al entero más cercano: <code>round x</code><br>
+				<h4>Operaciones Predefinidas para enteros:</h4>
+				<p>Primero declararemos dos variables numericas enteras x e y:<code>x=(-3)</code>  <code>y=2</code><br>
 					El resto de x entre y: <code><strong>mod</strong> x y</code><br>
 					Máximo entre dos números: <code><strong>max</strong> x y</code> <br>
 					Mínimo entre dos números: <code><strong>min</strong> x y</code><br>
@@ -156,6 +163,16 @@
 					Verifica si el número es par: <code><strong>even</strong> x</code><br>
 					Verifica si el número es impar: <code><strong>odd</strong> x</code><br>
 					El máximo común divisor de dos números: <code><strong>gcd</strong> x y</code><br>
+				</p>
+
+				<iframe src="http://35.167.3.67:4001/#jquery-console-prompt-label" class="consola"></iframe>
+
+				<h4>Operaciones Predefinidas para reales:</h4>
+				<p>	Primero declararemos dos variables numericas x e y:<code>x=(-3.6)</code>  <code>y=5</code><br>
+					El redondeo de x al entero más cercano: <code><strong>round</strong> x</code><br>
+					Máximo entre dos números: <code><strong>max</strong> x y</code> <br>
+					Mínimo entre dos números: <code><strong>min</strong> x y</code><br>
+					Absoluto de un número: <code><strong>abs</strong> x</code><br>
 				</p>
 
 				<iframe src="http://35.167.3.67:4001/#jquery-console-prompt-label" class="consola"></iframe>
