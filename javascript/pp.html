@@ -97,41 +97,41 @@
 						<h1>Javascript</h1>
 						<h2>Primeros Pasos</h2>
 						<h3>Introducción a los computadores.</h3>
-						<p align="justify">Los computadores son máquinas construidas para realizar cálculos de manera automática. Los primeros computadores eran lentos y de baja capacidad, 
-							construidos con elementos electromecánicos y con tubos de vacio. Luego, con el surgimiento de los transistores y la tecnología de estado sólido 
-							(es decir los chips electrónicos), los computadores se hicieron más pequeños, potentes y eficientes. Hoy en día el celular que llevan en sus bolsillos 
+						<p align="justify">Los computadores son máquinas construidas para realizar cálculos de manera automática y veloz. Los primeros computadores eran lentos y de baja capacidad, 
+							construidos con elementos electromecánicos y con tubos de vacio. Luego, con el surgimiento de los transistores y la tecnología de discos de estado sólido 
+						, los computadores se hicieron más pequeños, potentes y eficientes. Hoy en día el celular que llevan en sus bolsillos 
 							es millones de veces más potente que los primeros computadores.</p>
 						<p>El computador tiene tres componentes escenciales: Procesador, Memoria y los dispositivos de entrada y salida.</p>
 						<ul>
 							<li>El procesador es el que se encarga de realizar los cálculos.</li>
 							<li>La memoria almacena los resultados. </li>
-							<li align="justify">Los dispositivos de entrada y salida me sirven para leer datos, mostrar resultados al usuario, y enviar mensajes. Ejemplos de dispositivos 
-								de entrada y salida son: la pantalla, el teclado, el mouse y la tarjeta de red que me permite enviar y recibir datos sobre internet.</li>
+							<li align="justify">Los dispositivos de entrada y salida sirven para leer datos, mostrar resultados al usuario y enviar mensajes. Ejemplos de dispositivos 
+								de entrada y salida son: la pantalla, el teclado, el mouse y la tarjeta de red que le permiten al usuario enviar y recibir datos por ejemplo, sobre internet.</li>
 						</ul>
 
 						<h3>Lenguajes de programación.</h3>
 
 						<p align="jusitfy">Los lenguajes de programación son lenguajes con sintaxis y gramáticas definidas, que permiten a los programadores darle instrucciones a los 
 							computadores.</p>
-						<p align="jusitfy">En este tutorial utilizaremos un lenguaje de programación denominado <strong>JavaScript</strong>. Hay muchos otros lenguajes que puedes 
-							aprender, como <strong>Haskell</strong>, <strong>Java</strong>, <strong>Phyton</strong>, <strong>C++</strong> entre otros.</p>
+						<p align="jusitfy">En este tutorial se utilizará un lenguaje de programación denominado <strong>JavaScript</strong>. Hay muchos otros lenguajes que puede 
+							aprender, como lo son <strong>Haskell</strong>, <strong>Java</strong>, <strong>Phyton</strong> ó <strong>C++</strong> entre otros.</p>
 
-						<p align="jusitfy">La sintaxis del lenguaje es muy simple. Por ejemplo, para invocar una función que muestra un cuadro de texto con una alerta, puedo escribir:</p>
+						<p align="jusitfy">La sintaxis del lenguaje es muy simple. Por ejemplo, para invocar una función que muestra un cuadro de texto con una alerta, puede escribir:</p>
 
-						<p><code>alert("Revisa el clima antes de salir");</code></p>
+						<p><code>alert("Revise el clima antes de salir");</code></p>
 
 						<a class="button special" onclick="alert('Revisa el clima antes de salir');">Ejecutar</a>
 
-						<p align="justify">La instrucción anterior invoca la función <code>alert(mensaje)</code> y le pasa como valor del parámetro <var>mensaje</var> la cadena 
-							de caracteres <code>"Revisa el clima antes de salir"</code>. <strong>No olvides escribir un <code>;</code> al final de cada instrucción</strong>.</p>
+						<p align="justify">La instrucción anterior invoca la función <code>alert(mensaje)</code> y le pasa como valor del parámetro <i>'mensaje'</i> la cadena 
+							de caracteres <code>"Revisa el clima antes de salir"</code>. <strong>No olvide que la sintáxis de javascript obliga a escribir un <code>;</code> al final de cada instrucción</strong>.</p>
 
 						<h3>Librerías de funciones</h3>
 
 						<p align="justify">Generalmente los lenguajes proveen conjuntos de funciones que permiten hacer acciones sofisticadas como dibujar gráficos, crear música y enviar 
-							mensajes de correo. Estas funcionalidades se agrupan en <strong> librerías</strong>. Para este tutorial utilizaremos la librería de gráficos y 
+							mensajes de correo. Estas funcionalidades se agrupan en <strong> librerías</strong>. Para este tutorial se utilizará la librería de gráficos y 
 							sonidos denominada <strong>P5.js</strong>.</p>
 
-						<p align="justify">Esta librería provee funciones para dibujar círculos, triángulos, rectángulos y otras que exploraremos más adelante. Un ejemplo de como invocar una 
+						<p align="justify">Esta librería provee funciones para dibujar círculos, triángulos, rectángulos y otras que se explorarán más adelante. Un ejemplo de como invocar una 
 							de estas funciones para pintar un círculo es el siguiente:</p>
 
 						<code class="">ellipse(50, 50, 100, 100);</code>
@@ -140,24 +140,24 @@
 						<br/>
 
 						<p align="justify">La sintáxis de la función es la siguiente <code class="">ellipse(x, y, ancho, alto);</code>. Donde los parámetros 
-							<strong><var>x</var></strong> y <strong><var>y</var></strong> representan el centro de la elipse, y los parámetros 
-							<strong><var>ancho</var></strong> y <strong><var>alto</var></strong> representan el ancho y el alto de la elipse. Si los 
-							parámetros de <strong><var>ancho</var></strong> y <strong><var>alto</var></strong> son iguales se dibujará un círculo. 
-							Los valores se dan en pixeles, un pixel es un punto en la pantalla (más sobre esto en la siguiente sección).</p>
+							<strong><i>x</i></strong> y <strong><i>y</i></strong> representan el centro de la elipse, y los parámetros 
+							<strong><i>ancho</i></strong> y <strong><i>alto</i></strong> representan el ancho y el alto de la elipse. Si los 
+							parámetros de <strong><i>ancho</i></strong> y <strong><i>alto</i></strong> son iguales se dibujará un círculo. 
+							Los valores se dan en pixeles, un pixel es la representación de un punto led en la pantalla.</p>
 
 						<p>Otras funciones disponibles son:</p>
 
 						<ul>
 							<li><code>createCanvas(ancho, alto);</code> crea un lienzo para realizar los dibujos con el ancho y alto especificados en 
-								<var>ancho</var> y <var>alto</var>. <strong>En el lienzo, las cordenadas en el eje <var>x</var> se miden desde 
-									la esquina superior izquierda hacia la derecha y las cordenadas en el eje <var>y</var> se miden desde 
+								<i>ancho</i> y <i>alto</i>. <strong>En el lienzo, las cordenadas en el eje <i>x</i> se miden desde 
+									la esquina superior izquierda hacia la derecha y las cordenadas en el eje <i>y</i> se miden desde 
 									la esquina superior izquierda hacia abajo.</strong></li>
-							<li><code>line(x1, y1, x2, y2);</code> dibuja una línea entre los puntos <strong><var>(x1, y1)</var></strong> y 
-								<strong><var>(x2, y2)</var></strong>.</li>
-							<li><code>rect(x,y, ancho, alto);</code> dibuja un rectángulo con la esquina superior izquierda en <strong><var>(x, y)</var></strong> y 
-								con ancho y alto especificado en los parámetros <var>ancho, alto</var>.</li>
-							<li><code>triangle(x1,y1,x2,y2,x3,y3);</code> dibuja un triángulo entre los puntos puntos <strong><var>(x1, y1)</var></strong>, 
-								<strong><var>(x2, y2)</var></strong> <strong><var>(x3, y3)</var>.</strong></li>
+							<li><code>line(x1, y1, x2, y2);</code> dibuja una línea entre los puntos <strong><i>(x1, y1)</i></strong> y 
+								<strong><i>(x2, y2)</i></strong>.</li>
+							<li><code>rect(x,y, ancho, alto);</code> dibuja un rectángulo con la esquina superior izquierda en <strong><i>(x, y)</i></strong> y 
+								con ancho y alto especificado en los parámetros <i>ancho, alto</i>.</li>
+							<li><code>triangle(x1,y1,x2,y2,x3,y3);</code> dibuja un triángulo entre los puntos puntos <strong><i>(x1, y1)</i></strong>, 
+								<strong><i>(x2, y2)</i></strong> <strong><i>(x3, y3)</i>.</strong></li>
 							<li><code>background(rojo, verde, azul);</code> cambia el color del lienzo con un color que es la combinación 
 								de los niveles de rojo, verde y azul especificados en los parámetros respectivos. Cada parámetro puede ser una varlor de 
 								<strong>0</strong> a <strong>255.</strong></li>
@@ -165,15 +165,15 @@
 
 						<h3>Definiendo funciones</h3>
 
-						<p alig="justify">Ahora vamos a realizar programas. Para poder utilizar las funciones de la libarería gráfica deberas escribir las instrucciones
-							al interior de dos funciones definidas por usted: <i><var>setup</var></i> y <i><var>draw</var></i>.</p>
+						<p alig="justify">Ahora procederemos a realizar programas. Para poder utilizar las funciones de la libarería gráfica deberá escribir las instrucciones
+							al interior de dos funciones definidas por usted: <i><i>setup</i></i> y <i><i>draw</i></i>.</p>
 		
 						<p>Estas funciones son invocadas de la siguiente manera cada vez que usted oprime 
 							el boton ejecutar:</p>
 						<ul>
 							<li>La función <strong>setup</strong> se invoca al principio, una sola vez, despues de oprimir el boton <strong>Ejecutar</strong>.</li>
 							<li>La función <strong>draw</strong> se invoca idefinidamente de manera continua (muchas veces por segundo), despues de ejecutar la función <strong>setup</strong>.
-								Cuando realizemos animaciones usted verá la utilidad de que esta función se repita de manera idefinida.</li>
+								Cuando se realicen animaciones usted verá la utilidad de que esta función se repita de manera indefinida.</li>
 						</ul>
 						
 						<p>Una función se define usando la palabra reservada <strong>function</strong> de la siguiente manera:</p>
@@ -203,18 +203,17 @@
 						<strong>draw</strong>. Así, primero se crea un lienzo de 600x400 pixeles y luego se dibuja un círculo con centro en 
 						las cordenadas (300,300) y de ancho 100 y alto 100 (recuerde que todos los números se refieren a pixeles).</p>
 						
-						<h3>Mi primer programa</h3>
+						<h3>El primer programa</h3>
 						
-						Ahora intenta realizar lo siguiente en el programa descrito a continuación:
+						Ahora intente replicar el programa descrito a continuación:
 						<ul>
-							<li>Lee el programa e intente explicarlo.</li>
+							<li>Lea el programa e intente explicarlo.</li>
 							<li>Mueva los círculos de posición.</li>
 							<li>Cambie el tamaño de los círculos.</li>
-							<li>Dibuje una línea, un rectángulo y un triangulo.</li>
-		
+							<li>Dibuje una línea, un rectángulo y un triángulo.</li>
 						</ul>
 						
-						<p><strong>Recuerda:</strong> siempre puedes restaurar el programa original oprimiendo el botón <strong>Restaurar</strong>. </p>
+						<p><strong>Recuerde:</strong> siempre puede restaurar el programa original oprimiendo el botón <strong>Restaurar</strong>. </p>
 
 						<div id="IDE">
 							<iframe id="exampleFrame" src="../assets/embeded.html" width="600" height="400" style="width: 100%"></iframe>
@@ -270,6 +269,7 @@
                             editor.getSession().setMode("ace/mode/javascript");
                             iniciarCanvas(editor, "#exampleFrame")
                             restaurar("pp/sketch.js", editor);
+							window.onload = ejecutar(editor, '#exampleFrame');
         </script>
 
 	</body>
