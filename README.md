@@ -10,4 +10,6 @@ IPP5 es una plataforma web con el ánimo de motivar a sus estudiantes a realizar
 ### Director de proyecto: Luis Daniel Benavides Navarro
 ### Grupo de proyecto: Laura Ramos, Johan Peña, Leonardo Castro.
 
-
+###Repositorios backends
+https://github.com/woexpect/SSHConnectionIpp5.git
+https://github.com/LauraMilenaRB/JavaSocketsConnectionIpp5.git
