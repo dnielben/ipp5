@@ -8,14 +8,14 @@ server= (function() {
     return{
         command: function (comman,callback){
             alert(comman);
-            var getpromise = $.get("18.236.157.85:8080/commands/"+comman+"/ip",callback);
+            var getpromise = $.get("https://cors.io/?http://34.216.40.74:8080/commands/"+comman+"/ip",callback);
             getpromise.then(
                 function () {
-                    console.info("OK getMapajuego");
+                    console.info("OK ");
 
                 },
                 function () {
-                    alert("Error getMapajuego");
+                    alert("Error");
                 }
             );
             return getpromise;
