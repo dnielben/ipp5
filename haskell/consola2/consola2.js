@@ -14,6 +14,7 @@ app = (function () {
         send: function(){
             var data = document.getElementById("commands").value;
             api.command(data,function (data2){
+                $('#output').val(data2);
                 alert(data2)
             })
         },
@@ -21,8 +22,12 @@ app = (function () {
             if (window.event.keyCode == 13) {
                 app.send();
             }
-        }
+        },
+        init: function(){
+            api.init();
+        },
     };
 })();
 $(document).ready(function(){
+    api.init();
 });

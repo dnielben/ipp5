@@ -7,7 +7,6 @@
 server= (function() {
     return{
         command: function (comman,callback){
-            alert(comman);
             var getpromise = $.get("https://cors.io/?http://34.216.40.74:8080/commands/"+comman+"/ip",callback);
             getpromise.then(
                 function () {
@@ -19,7 +18,20 @@ server= (function() {
                 }
             );
             return getpromise;
-        }
+        },
 
+        init: function (){
+            var getpromise = $.get("https://cors.io/?http://34.216.40.74:8080/commands/init/ip");
+            getpromise.then(
+                function () {
+                    console.info("OK ");
+
+                },
+                function () {
+                    alert("Error");
+                }
+            );
+            return getpromise;
+        }
     };
 })();

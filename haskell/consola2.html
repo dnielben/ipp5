@@ -127,8 +127,10 @@
                         <span></span>
 						<div id="console" style="width: 50%; height: 800px; float:right; background: #3C3454" >
                             <div style="position: absolute; ">
-                                <textarea onkeypress="app.press()" id="commands"  style="color:#fff;" autocapitalize="off"  autocorrect="off" spellcheck="false" autocomplete="off" style="position: absolute; width: 2px;">
-                                </textarea>
+                                <output  onkeypress="app.press()" id="output"  style="color:#fff;" autocapitalize="off"  autocorrect="off" spellcheck="false" autocomplete="off" style="position: absolute; width: 2px;">
+                                </output>
+                                <p style="color:#fff">Prelude> <input onkeypress="app.press()" id="commands" style="color:#fff;background: #3C3454"  >
+                                </p>
                             </div>
 						</div>
 					</section>
