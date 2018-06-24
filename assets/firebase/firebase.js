@@ -33,7 +33,9 @@
         const auth = firebase.auth();
         //Logearse ante firebase
         const promise = auth.signInWithEmailAndPassword(email, contra);
-        promise.catch(e => console.log("Mensaje: " + e.message + " Codigo: " + e.code));
+        promise
+        .then(e => window.location.replace('../index.html'))
+        .catch(e => console.log("Mensaje: " + e.message + " Codigo: " + e.code));
     });
 
     btnRegister.addEventListener('click', e => {

@@ -3540,3 +3540,7 @@
 	.hide {
 		display: none;
 	}
+
+	.authContainer{
+		float: right;
+	}

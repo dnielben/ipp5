@@ -5,190 +5,272 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>JS - Primeros pasos</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<meta name="theme-color" content="#F7DD41">
-		<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-		<link rel="manifest" href="../favicon/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
-		<script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
-		<!-- Wrapper -->
-		<div id="wrapper">
 
-			<!-- Header -->
-			<header id="header">
-				<div class="inner">
+<head>
+	<title>JS - Primeros pasos</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<meta name="theme-color" content="#F7DD41">
+	<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
+	<script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
 
-					<!-- Logo -->
-					<a href="../index.html" class="logo">
-						<span class="symbol"><img src="../images/ipp5logo.png" alt="" /></span><span class="title logotypo">ipp5</span>
-					</a>
+<body>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-					<!-- Nav -->
-					<nav class="menu_mobil">
-						<ul>
-							<li><a href="#menu">Menu</a></li>
-						</ul>
-					</nav>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-				</div>
-			</header>
+				<!-- Logo -->
+				<a href="../index.html" class="logo">
+					<span class="symbol">
+						<img src="../images/ipp5logo.png" alt="" />
+					</span>
+					<span class="title logotypo">ipp5</span>
+				</a>
 
-			<!-- Menu -->
-			<nav id="menu">
-				<h2>Menú</h2>
-				<ul>
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="../javascript/start.html">JavaScript</a></li>
-					<li><a href="../haskell/start.html">Haskell</a></li>
-					<!-- <li><a href="../pb/Recursion.html">Programacion basica</a></li> -->
-				</ul>
-			</nav>
-			<!-- Menu escritorio -->
-			<div class="navbar">
-				<a href="../index.html">Inicio</a>
-				<div class="dropdown">
-					<a class="dropbtn" style="color: #212121">JavaScript</a>
-					<div class="dropdown-content">
-						<a href="../javascript/start.html">Inicio</a>
-						<a href="../javascript/pp.html">Primeros Pasos</a>
-						<a href="../javascript/condicionales.html">Condicionales</a>
-						<a href="../javascript/ciclos.html">Ciclos</a>
-						<a href="../javascript/ciclos.html">Memoria</a>
-						<a href="../javascript/retos.html">Retos</a>
+				<!-- Nav -->
+				<nav class="menu_mobil">
+					<ul>
+						<li>
+							<a href="#menu">Menu</a>
+						</li>
+					</ul>
+				</nav>
 
-					</div>
-				</div>
-				<div class="dropdown">
-					<a class="dropbtn" style="color: #212121">Haskell</a>
-					<div class="dropdown-content">
-						<a href="../haskell/start.html">Inicio</a>
-						<a href="../haskell/pp.html">Primeros Pasos</a>
-						<a href="../haskell/Listas.html">Listas</a>
-						<a href="../haskell/Funciones.html">Funciones</a>
-						<a href="../haskell/Recursion.html">Recursion</a>
-					</div>
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menú</h2>
+			<ul>
+				<li>
+					<a href="../index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="../javascript/start.html">JavaScript</a>
+				</li>
+				<li>
+					<a href="../haskell/start.html">Haskell</a>
+				</li>
+				<!-- <li><a href="../pb/Recursion.html">Programacion basica</a></li> -->
+			</ul>
+		</nav>
+		<!-- Menu escritorio -->
+		<div class="navbar">
+			<a href="../index.html">Inicio</a>
+			<div class="dropdown">
+				<a class="dropbtn" style="color: #212121">JavaScript</a>
+				<div class="dropdown-content">
+					<a href="../javascript/start.html">Inicio</a>
+					<a href="../javascript/pp.html">Primeros Pasos</a>
+					<a href="../javascript/memoria.html">Memoria</a>
+					<a href="../javascript/condicionales.html">Condicionales</a>
+					<a href="../javascript/retos.html">Retos</a>
+					<a href="../javascript/ciclos.html">Ciclos</a>
 				</div>
 			</div>
+			<div class="dropdown">
+				<a class="dropbtn" style="color: #212121">Haskell</a>
+				<div class="dropdown-content">
+					<a href="../haskell/start.html">Inicio</a>
+					<a href="../haskell/pp.html">Primeros Pasos</a>
+					<a href="../haskell/Listas.html">Listas</a>
+					<a href="../haskell/Funciones.html">Funciones</a>
+					<a href="../haskell/Recursion.html">Recursion</a>
+				</div>
+			</div>
+			<div class="authContainer">
+				<button id="loginRegister" class="special" onclick="window.location.href='../auth/auth.html'">Ingresa / Regístrate</button>
+				<button id="profile" class="special hide" onclick="window.location.href='../auth/auth.html'">Mi Perfil</button>
+				<button id="logout" class="hide">Salir</button>
+			</div>
+		</div>
 
-			<!-- Main -->
-			<div id="main">
-				<div class="inner">
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
 
-					<section>
-						<h1>Javascript</h1>
-						<h2>Primeros Pasos</h2>
-						<h3>Introducción a los computadores.</h3>
-						<p align="justify">Los computadores son máquinas construidas para realizar cálculos de manera automática y veloz. Los primeros computadores eran lentos y de baja capacidad, 
-							construidos con elementos electromecánicos y con tubos de vacio. Luego, con el surgimiento de los transistores y la tecnología de discos de estado sólido 
-						, los computadores se hicieron más pequeños, potentes y eficientes. Hoy en día el celular que llevan en sus bolsillos 
-							es millones de veces más potente que los primeros computadores.</p>
-						<p>El computador tiene tres componentes escenciales: Procesador, Memoria y los dispositivos de entrada y salida.</p>
-						<ul>
-							<li>El procesador es el que se encarga de realizar los cálculos.</li>
-							<li>La memoria almacena los resultados. </li>
-							<li align="justify">Los dispositivos de entrada y salida sirven para leer datos, mostrar resultados al usuario y enviar mensajes. Ejemplos de dispositivos 
-								de entrada y salida son: la pantalla, el teclado, el mouse y la tarjeta de red que le permiten al usuario enviar y recibir datos por ejemplo, sobre internet.</li>
-						</ul>
+				<section>
+					<h1>Javascript</h1>
+					<h2>Primeros Pasos</h2>
+					<h3>Introducción a los computadores.</h3>
+					<p align="justify">Los computadores son máquinas construidas para realizar cálculos de manera automática y veloz. Los primeros computadores
+						eran lentos y de baja capacidad, construidos con elementos electromecánicos y con tubos de vacio. Luego, con el surgimiento
+						de los transistores y la tecnología de discos de estado sólido , los computadores se hicieron más pequeños, potentes
+						y eficientes. Hoy en día el celular que llevan en sus bolsillos es millones de veces más potente que los primeros computadores.</p>
+					<p>El computador tiene tres componentes escenciales: Procesador, Memoria y los dispositivos de entrada y salida.</p>
+					<ul>
+						<li>El procesador es el que se encarga de realizar los cálculos.</li>
+						<li>La memoria almacena los resultados. </li>
+						<li align="justify">Los dispositivos de entrada y salida sirven para leer datos, mostrar resultados al usuario y enviar mensajes. Ejemplos
+							de dispositivos de entrada y salida son: la pantalla, el teclado, el mouse y la tarjeta de red que le permiten al
+							usuario enviar y recibir datos por ejemplo, sobre internet.</li>
+					</ul>
 
-						<h3>Lenguajes de programación.</h3>
+					<h3>Lenguajes de programación.</h3>
 
-						<p align="jusitfy">Los lenguajes de programación son lenguajes con sintaxis y gramáticas definidas, que permiten a los programadores darle instrucciones a los 
-							computadores.</p>
-						<p align="jusitfy">En este tutorial se utilizará un lenguaje de programación denominado <strong>JavaScript</strong>. Hay muchos otros lenguajes que puede 
-							aprender, como lo son <strong>Haskell</strong>, <strong>Java</strong>, <strong>Phyton</strong> ó <strong>C++</strong> entre otros.</p>
+					<p align="jusitfy">Los lenguajes de programación son lenguajes con sintaxis y gramáticas definidas, que permiten a los programadores darle
+						instrucciones a los computadores.
+					</p>
+					<p align="jusitfy">En este tutorial se utilizará un lenguaje de programación denominado
+						<strong>JavaScript</strong>. Hay muchos otros lenguajes que puede aprender, como lo son
+						<strong>Haskell</strong>,
+						<strong>Java</strong>,
+						<strong>Phyton</strong> ó
+						<strong>C++</strong> entre otros.</p>
 
-						<p align="jusitfy">La sintaxis del lenguaje es muy simple. Por ejemplo, para invocar una función que muestra un cuadro de texto con una alerta, puede escribir:</p>
+					<p align="jusitfy">La sintaxis del lenguaje es muy simple. Por ejemplo, para invocar una función que muestra un cuadro de texto con una
+						alerta, puede escribir:</p>
 
-						<p><code>alert("Revise el clima antes de salir");</code></p>
+					<p>
+						<code>alert("Revise el clima antes de salir");</code>
+					</p>
 
-						<a class="button special" onclick="alert('Revisa el clima antes de salir');">Ejecutar</a>
+					<a class="button special" onclick="alert('Revisa el clima antes de salir');">Ejecutar</a>
 
-						<p align="justify">La instrucción anterior invoca la función <code>alert(mensaje)</code> y le pasa como valor del parámetro <i>'mensaje'</i> la cadena 
-							de caracteres <code>"Revisa el clima antes de salir"</code>. <strong>No olvide que la sintáxis de javascript obliga a escribir un <code>;</code> al final de cada instrucción</strong>.</p>
+					<p align="justify">La instrucción anterior invoca la función
+						<code>alert(mensaje)</code> y le pasa como valor del parámetro
+						<i>'mensaje'</i> la cadena de caracteres
+						<code>"Revisa el clima antes de salir"</code>.
+						<strong>No olvide que la sintáxis de javascript obliga a escribir un
+							<code>;</code> al final de cada instrucción</strong>.</p>
 
-						<h3>Librerías de funciones</h3>
+					<h3>Librerías de funciones</h3>
 
-						<p align="justify">Generalmente los lenguajes proveen conjuntos de funciones que permiten hacer acciones sofisticadas como dibujar gráficos, crear música y enviar 
-							mensajes de correo. Estas funcionalidades se agrupan en <strong> librerías</strong>. Para este tutorial se utilizará la librería de gráficos y 
-							sonidos denominada <strong>P5.js</strong>.</p>
+					<p align="justify">Generalmente los lenguajes proveen conjuntos de funciones que permiten hacer acciones sofisticadas como dibujar gráficos,
+						crear música y enviar mensajes de correo. Estas funcionalidades se agrupan en
+						<strong> librerías</strong>. Para este tutorial se utilizará la librería de gráficos y sonidos denominada
+						<strong>P5.js</strong>.</p>
 
-						<p align="justify">Esta librería provee funciones para dibujar círculos, triángulos, rectángulos y otras que se explorarán más adelante. Un ejemplo de como invocar una 
-							de estas funciones para pintar un círculo es el siguiente:</p>
+					<p align="justify">Esta librería provee funciones para dibujar círculos, triángulos, rectángulos y otras que se explorarán más adelante.
+						Un ejemplo de como invocar una de estas funciones para pintar un círculo es el siguiente:</p>
 
-						<code class="">ellipse(50, 50, 100, 100);</code>
+					<code class="">ellipse(50, 50, 100, 100);</code>
 
-						<br/>
-						<br/>
+					<br/>
+					<br/>
 
-						<p align="justify">La sintáxis de la función es la siguiente <code class="">ellipse(x, y, ancho, alto);</code>. Donde los parámetros 
-							<strong><i>x</i></strong> y <strong><i>y</i></strong> representan el centro de la elipse, y los parámetros 
-							<strong><i>ancho</i></strong> y <strong><i>alto</i></strong> representan el ancho y el alto de la elipse. Si los 
-							parámetros de <strong><i>ancho</i></strong> y <strong><i>alto</i></strong> son iguales se dibujará un círculo. 
-							Los valores se dan en pixeles, un pixel es la representación de un punto led en la pantalla.</p>
+					<p align="justify">La sintáxis de la función es la siguiente
+						<code class="">ellipse(x, y, ancho, alto);</code>. Donde los parámetros
+						<strong>
+							<i>x</i>
+						</strong> y
+						<strong>
+							<i>y</i>
+						</strong> representan el centro de la elipse, y los parámetros
+						<strong>
+							<i>ancho</i>
+						</strong> y
+						<strong>
+							<i>alto</i>
+						</strong> representan el ancho y el alto de la elipse. Si los parámetros de
+						<strong>
+							<i>ancho</i>
+						</strong> y
+						<strong>
+							<i>alto</i>
+						</strong> son iguales se dibujará un círculo. Los valores se dan en pixeles, un pixel es la representación de un punto led en
+						la pantalla.</p>
 
-						<p>Otras funciones disponibles son:</p>
+					<p>Otras funciones disponibles son:</p>
 
-						<ul>
-							<li><code>createCanvas(ancho, alto);</code> crea un lienzo para realizar los dibujos con el ancho y alto especificados en 
-								<i>ancho</i> y <i>alto</i>. <strong>En el lienzo, las cordenadas en el eje <i>x</i> se miden desde 
-									la esquina superior izquierda hacia la derecha y las cordenadas en el eje <i>y</i> se miden desde 
-									la esquina superior izquierda hacia abajo.</strong></li>
-							<li><code>line(x1, y1, x2, y2);</code> dibuja una línea entre los puntos <strong><i>(x1, y1)</i></strong> y 
-								<strong><i>(x2, y2)</i></strong>.</li>
-							<li><code>rect(x,y, ancho, alto);</code> dibuja un rectángulo con la esquina superior izquierda en <strong><i>(x, y)</i></strong> y 
-								con ancho y alto especificado en los parámetros <i>ancho, alto</i>.</li>
-							<li><code>triangle(x1,y1,x2,y2,x3,y3);</code> dibuja un triángulo entre los puntos puntos <strong><i>(x1, y1)</i></strong>, 
-								<strong><i>(x2, y2)</i></strong> <strong><i>(x3, y3)</i>.</strong></li>
-							<li><code>background(rojo, verde, azul);</code> cambia el color del lienzo con un color que es la combinación 
-								de los niveles de rojo, verde y azul especificados en los parámetros respectivos. Cada parámetro puede ser una varlor de 
-								<strong>0</strong> a <strong>255.</strong></li>
-						</ul>
+					<ul>
+						<li>
+							<code>createCanvas(ancho, alto);</code> crea un lienzo para realizar los dibujos con el ancho y alto especificados en
+							<i>ancho</i> y
+							<i>alto</i>.
+							<strong>En el lienzo, las cordenadas en el eje
+								<i>x</i> se miden desde la esquina superior izquierda hacia la derecha y las cordenadas en el eje
+								<i>y</i> se miden desde la esquina superior izquierda hacia abajo.</strong>
+						</li>
+						<li>
+							<code>line(x1, y1, x2, y2);</code> dibuja una línea entre los puntos
+							<strong>
+								<i>(x1, y1)</i>
+							</strong> y
+							<strong>
+								<i>(x2, y2)</i>
+							</strong>.</li>
+						<li>
+							<code>rect(x,y, ancho, alto);</code> dibuja un rectángulo con la esquina superior izquierda en
+							<strong>
+								<i>(x, y)</i>
+							</strong> y con ancho y alto especificado en los parámetros
+							<i>ancho, alto</i>.</li>
+						<li>
+							<code>triangle(x1,y1,x2,y2,x3,y3);</code> dibuja un triángulo entre los puntos puntos
+							<strong>
+								<i>(x1, y1)</i>
+							</strong>,
+							<strong>
+								<i>(x2, y2)</i>
+							</strong>
+							<strong>
+								<i>(x3, y3)</i>.</strong>
+						</li>
+						<li>
+							<code>background(rojo, verde, azul);</code> cambia el color del lienzo con un color que es la combinación de los niveles de rojo, verde y azul especificados
+							en los parámetros respectivos. Cada parámetro puede ser una varlor de
+							<strong>0</strong> a
+							<strong>255.</strong>
+						</li>
+					</ul>
 
-						<h3>Definiendo funciones</h3>
+					<h3>Definiendo funciones</h3>
 
-						<p alig="justify">Ahora procederemos a realizar programas. Para poder utilizar las funciones de la libarería gráfica deberá escribir las instrucciones
-							al interior de dos funciones definidas por usted: <i><i>setup</i></i> y <i><i>draw</i></i>.</p>
-		
-						<p>Estas funciones son invocadas de la siguiente manera cada vez que usted oprime 
-							el boton ejecutar:</p>
-						<ul>
-							<li>La función <strong>setup</strong> se invoca al principio, una sola vez, despues de oprimir el boton <strong>Ejecutar</strong>.</li>
-							<li>La función <strong>draw</strong> se invoca idefinidamente de manera continua (muchas veces por segundo), despues de ejecutar la función <strong>setup</strong>.
-								Cuando se realicen animaciones usted verá la utilidad de que esta función se repita de manera indefinida.</li>
-						</ul>
-						
-						<p>Una función se define usando la palabra reservada <strong>function</strong> de la siguiente manera:</p>
-						
-						<code><strong>function</strong> [Nombre de la función] ( [Lista de parámetros] ) { [Lista de instrucciones separadas por ;] } </code>
+					<p alig="justify">Ahora procederemos a realizar programas. Para poder utilizar las funciones de la libarería gráfica deberá escribir las
+						instrucciones al interior de dos funciones definidas por usted:
+						<i>
+							<i>setup</i>
+						</i> y
+						<i>
+							<i>draw</i>
+						</i>.</p>
 
-						<br/>
-						<br/>
-						
-						<p>Por ejemplo, si deseo dibujar un círculo puedo escribir el siguiente programa:</p>
-						
-						<pre>
+					<p>Estas funciones son invocadas de la siguiente manera cada vez que usted oprime el boton ejecutar:</p>
+					<ul>
+						<li>La función
+							<strong>setup</strong> se invoca al principio, una sola vez, despues de oprimir el boton
+							<strong>Ejecutar</strong>.</li>
+						<li>La función
+							<strong>draw</strong> se invoca idefinidamente de manera continua (muchas veces por segundo), despues de ejecutar la función
+							<strong>setup</strong>. Cuando se realicen animaciones usted verá la utilidad de que esta función se repita de manera indefinida.</li>
+					</ul>
+
+					<p>Una función se define usando la palabra reservada
+						<strong>function</strong> de la siguiente manera:</p>
+
+					<code><strong>function</strong> [Nombre de la función] ( [Lista de parámetros] ) { [Lista de instrucciones separadas por ;] } </code>
+
+					<br/>
+					<br/>
+
+					<p>Por ejemplo, si deseo dibujar un círculo puedo escribir el siguiente programa:</p>
+
+					<pre>
 							<code><strong>function</strong> setup() {
 	createCanvas(600, 400);
 }
@@ -196,84 +278,93 @@
 <strong>function</strong> draw() {
 	ellipse(300, 300, 100, 100);
 }</code></pre>
-						
-						
-						<p>Observe que las dos funciones definidas no tienen parámetros, 
-							es decir que cuando las invocan no necesitan ningún valor en el paréntesis.</p>
-						
-						<p>Cuando se ejecuta este programa, primero se ejecutan una sola vez las instrucciones definidas en la función 
-							<strong>setup</strong> y luego se ejecutan indefinidamente las instrucciones definidas en la función 
-						<strong>draw</strong>. Así, primero se crea un lienzo de 600x400 pixeles y luego se dibuja un círculo con centro en 
-						las cordenadas (300,300) y de ancho 100 y alto 100 (recuerde que todos los números se refieren a pixeles).</p>
-						
-						<h3>El primer programa</h3>
-						
-						Ahora intente replicar el programa descrito a continuación:
-						<ul>
-							<li>Lea el programa e intente explicarlo.</li>
-							<li>Mueva los círculos de posición.</li>
-							<li>Cambie el tamaño de los círculos.</li>
-							<li>Dibuje una línea, un rectángulo y un triángulo.</li>
-						</ul>
-						
-						<p><strong>Recuerde:</strong> siempre puede restaurar el programa original oprimiendo el botón <strong>Restaurar</strong>. </p>
 
-						<div id="IDE">
-							<iframe id="exampleFrame" src="../assets/embeded.html" width="600" height="400" style="width: 100%"></iframe>
-							<div id="myContainer"></div>
-							<hr/>
-							<button class="btn btn-default" type="submit" onclick="ejecutar(editor, '#exampleFrame')">Ejecutar</button>
-							<button class="btn btn-default" type="submit" onclick="restaurar('pp/sketch.js', editor)">Restaurar</button>
-							<br/><br/>
-	
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h3 class="panel-title">Código de ejemplo</h3>
-								</div>
-								<div class="panel-body" style="width: 100%">
-									<div id="editor" class="editor-pequeno"></div>
-								</div>
+
+					<p>Observe que las dos funciones definidas no tienen parámetros, es decir que cuando las invocan no necesitan ningún valor
+						en el paréntesis.</p>
+
+					<p>Cuando se ejecuta este programa, primero se ejecutan una sola vez las instrucciones definidas en la función
+						<strong>setup</strong> y luego se ejecutan indefinidamente las instrucciones definidas en la función
+						<strong>draw</strong>. Así, primero se crea un lienzo de 600x400 pixeles y luego se dibuja un círculo con centro en las cordenadas
+						(300,300) y de ancho 100 y alto 100 (recuerde que todos los números se refieren a pixeles).</p>
+
+					<h3>El primer programa</h3>
+
+					Ahora intente replicar el programa descrito a continuación:
+					<ul>
+						<li>Lea el programa e intente explicarlo.</li>
+						<li>Mueva los círculos de posición.</li>
+						<li>Cambie el tamaño de los círculos.</li>
+						<li>Dibuje una línea, un rectángulo y un triángulo.</li>
+					</ul>
+
+					<p>
+						<strong>Recuerde:</strong> siempre puede restaurar el programa original oprimiendo el botón
+						<strong>Restaurar</strong>. </p>
+
+					<div id="IDE">
+						<iframe id="exampleFrame" src="../assets/embeded.html" width="600" height="400" style="width: 100%"></iframe>
+						<div id="myContainer"></div>
+						<hr/>
+						<button class="btn btn-default" type="submit" onclick="ejecutar(editor, '#exampleFrame')">Ejecutar</button>
+						<button class="btn btn-default" type="submit" onclick="restaurar('pp/sketch.js', editor)">Restaurar</button>
+						<br/>
+						<br/>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Código de ejemplo</h3>
+							</div>
+							<div class="panel-body" style="width: 100%">
+								<div id="editor" class="editor-pequeno"></div>
 							</div>
 						</div>
-					</section>
-				</div>						
+					</div>
+				</section>
 			</div>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="copyright">
-						<li>&copy; IPP5. 2017 Todos los derechos reservados</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> &amp; Tunned by Johan Peña Designs.</li>
-					</ul>
-				</div>
-			</footer>
-
 		</div>
 
-		<!-- Scripts -->
-		<script src="../assets/js/jquery.min.js"></script>
-		<script src="../assets/js/skel.min.js"></script>
-		<script src="../assets/js/util.js"></script>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script src="../assets/js/main.js"></script>
-		<!-- Scripts compilador -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="copyright">
+					<li>&copy; IPP5. 2017 Todos los derechos reservados</li>
+					<li>Design:
+						<a href="http://html5up.net">HTML5 UP</a> &amp; Tunned by Johan Peña Designs.</li>
+				</ul>
+			</div>
+		</footer>
 
-        <script src="../js/vendor/bootstrap.min.js"></script>
+	</div>
 
-        <script src="../js/main.js"></script>
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+	<!-- Scripts compilador -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script src="../js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
-        <script>
-                            var editor = ace.edit("editor");
-                            editor.setTheme("ace/theme/github");
-                            editor.getSession().setMode("ace/mode/javascript");
-                            iniciarCanvas(editor, "#exampleFrame")
-                            restaurar("pp/sketch.js", editor);
-							window.onload = ejecutar(editor, '#exampleFrame');
-        </script>
+	<script src="../js/vendor/bootstrap.min.js"></script>
 
-	</body>
+	<script src="../js/main.js"></script>
+
+	<script src="../js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		var editor = ace.edit("editor");
+		editor.setTheme("ace/theme/github");
+		editor.getSession().setMode("ace/mode/javascript");
+		iniciarCanvas(editor, "#exampleFrame")
+		restaurar("pp/sketch.js", editor);
+		window.onload = ejecutar(editor, '#exampleFrame');
+	</script>
+
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script src="../assets/firebase/loginFromIndex.js"></script>
+
+</body>
+
 </html>

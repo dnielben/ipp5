@@ -5,6 +5,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
 <head>
 	<title>Haskell - Primeros pasos</title>
 	<meta charset="utf-8" />
@@ -21,7 +22,7 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
@@ -32,154 +33,224 @@
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
+
 <body>
-<!-- Wrapper -->
-<div id="wrapper">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-	<!-- Header -->
-	<header id="header">
-		<div class="inner">
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-			<!-- Logo -->
-			<a href="../index.html" class="logo">
-				<span class="symbol"><img src="../images/ipp5logo.png" alt="" /></span><span class="title logotypo">ipp5</span>
-			</a>
+				<!-- Logo -->
+				<a href="../index.html" class="logo">
+					<span class="symbol">
+						<img src="../images/ipp5logo.png" alt="" />
+					</span>
+					<span class="title logotypo">ipp5</span>
+				</a>
 
-			<!-- Nav -->
-			<nav class="menu_mobil">
-				<ul>
-					<li><a href="#menu">Menu</a></li>
-				</ul>
-			</nav>
+				<!-- Nav -->
+				<nav class="menu_mobil">
+					<ul>
+						<li>
+							<a href="#menu">Menu</a>
+						</li>
+					</ul>
+				</nav>
 
-		</div>
-	</header>
+			</div>
+		</header>
 
-	<!-- Menu -->
-	<nav id="menu">
-		<h2>Menú</h2>
-		<ul>
-			<li><a href="../index.html">Inicio</a></li>
-			<li><a href="../javascript/start.html">JavaScript</a></li>
-			<li><a href="../haskell/start.html">Haskell</a></li>
-			<!-- <li><a href="../pb/Recursion.html">Programacion basica</a></li> -->
-		</ul>
-	</nav>
-	<!-- Menu escritorio -->
-	<div class="navbar">
-		<a href="../index.html">Inicio</a>
-		<div class="dropdown">
-			<a class="dropbtn" style="color: #212121">JavaScript</a>
-			<div class="dropdown-content">
-				<a href="../javascript/start.html">Inicio</a>
-				<a href="../javascript/pp.html">Primeros Pasos</a>
-				<a href="../javascript/condicionales.html">Condicionales</a>
-				<a href="../javascript/ciclos.html">Ciclos</a>
-				<a href="../javascript/ciclos.html">Memoria</a>
-				<a href="../javascript/retos.html">Retos</a>
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menú</h2>
+			<ul>
+				<li>
+					<a href="../index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="../javascript/start.html">JavaScript</a>
+				</li>
+				<li>
+					<a href="../haskell/start.html">Haskell</a>
+				</li>
+				<!-- <li><a href="../pb/Recursion.html">Programacion basica</a></li> -->
+			</ul>
+		</nav>
+		<!-- Menu escritorio -->
+		<div class="navbar">
+			<a href="../index.html">Inicio</a>
+			<div class="dropdown">
+				<a class="dropbtn" style="color: #212121">JavaScript</a>
+				<div class="dropdown-content">
+					<a href="../javascript/start.html">Inicio</a>
+					<a href="../javascript/pp.html">Primeros Pasos</a>
+					<a href="../javascript/memoria.html">Memoria</a>
+					<a href="../javascript/condicionales.html">Condicionales</a>
+					<a href="../javascript/retos.html">Retos</a>
+					<a href="../javascript/ciclos.html">Ciclos</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<a class="dropbtn" style="color: #212121">Haskell</a>
+				<div class="dropdown-content">
+					<a href="../haskell/start.html">Inicio</a>
+					<a href="../haskell/pp.html">Primeros Pasos</a>
+					<a href="../haskell/Listas.html">Listas</a>
+					<a href="../haskell/Funciones.html">Funciones</a>
+					<a href="../haskell/Recursion.html">Recursion</a>
+				</div>
+			</div>
+			<div class="authContainer">
+				<button id="loginRegister" class="special" onclick="window.location.href='../auth/auth.html'">Ingresa / Regístrate</button>
+				<button id="profile" class="special hide" onclick="window.location.href='../auth/auth.html'">Mi Perfil</button>
+				<button id="logout" class="hide">Salir</button>
 			</div>
 		</div>
-		<div class="dropdown">
-			<a class="dropbtn" style="color: #212121">Haskell</a>
-			<div class="dropdown-content">
-				<a href="../haskell/start.html">Inicio</a>
-				<a href="../haskell/pp.html">Primeros Pasos</a>
-				<a href="../haskell/Listas.html">Listas</a>
-				<a href="../haskell/Funciones.html">Funciones</a>
-				<a href="../haskell/Recursion.html">Recursion</a>
-			</div>
-		</div>
-	</div>
 
-	<!-- Main -->
-	<div id="main">
-		<div class="inner">
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
 
-			<section>
+				<section>
 
-				<h1>Haskell</h1>
-				<h2>Declarando e inicializando variables.</h2>
-				<p>Para almacenar valores en memoria los lenguajes de programación usan variables que pueden ser de tipo numérico, booleano, cadena o estructuras de datos.<br>
-					Una variable se define en Haskell de la siguiente manera:<br>
-					<code> Nombre_de_la_variable = Valor inicial de la variable </code><br>
-					Para poder visualizar en cosola el contenido de la variable se utiliza la funcion <code> show(Nombre_de_la_variable) </code><br>
-				</p>
+					<h1>Haskell</h1>
+					<h2>Declarando e inicializando variables.</h2>
+					<p>Para almacenar valores en memoria los lenguajes de programación usan variables que pueden ser de tipo numérico, booleano,
+						cadena o estructuras de datos.
+						<br> Una variable se define en Haskell de la siguiente manera:
+						<br>
+						<code> Nombre_de_la_variable = Valor inicial de la variable </code>
+						<br> Para poder visualizar en cosola el contenido de la variable se utiliza la funcion
+						<code> show(Nombre_de_la_variable) </code>
+						<br>
+					</p>
 
-				<h2>Operaciones entre variables</h2>
-				<p align="justify">Haskell permite hacer operaciones aritméticas, booleanas y algunas otras funciones predefinidas por Haskell</p>
+					<h2>Operaciones entre variables</h2>
+					<p align="justify">Haskell permite hacer operaciones aritméticas, booleanas y algunas otras funciones predefinidas por Haskell</p>
 
-				<h3>Operaciones Aritméticas</h3>
-				<p align="justify"></p>
+					<h3>Operaciones Aritméticas</h3>
+					<p align="justify"></p>
 
-				<p>En Haskell se pueden realizar todas las operaciones aritméticas básicas (+, -, * , /, ^):<br>
-					Primero declararemos dos variables numericas x e y:<code>x=5</code>  <code>y=3</code><br>
-					Suma: <code>x<strong>+</strong>y</code><br>
-					Resta: <code>x<strong>-</strong>y</code><br>
-					Multiplicación: <code>x<strong>*</strong>y</code><br>
-					División (cociente x entre y): <code>x<strong>/</strong>y</code><br>
-					Potencia (x elevado a y): <code>x<strong>^</strong>y</code><br>
-				</p>
+					<p>En Haskell se pueden realizar todas las operaciones aritméticas básicas (+, -, * , /, ^):
+						<br> Primero declararemos dos variables numericas x e y:
+						<code>x=5</code>
+						<code>y=3</code>
+						<br> Suma:
+						<code>x<strong>+</strong>y</code>
+						<br> Resta:
+						<code>x<strong>-</strong>y</code>
+						<br> Multiplicación:
+						<code>x<strong>*</strong>y</code>
+						<br> División (cociente x entre y):
+						<code>x<strong>/</strong>y</code>
+						<br> Potencia (x elevado a y):
+						<code>x<strong>^</strong>y</code>
+						<br>
+					</p>
 
-				<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
+					<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
 
-				<h3>Operaciones Booleanas</h3>
-				<p align="justify"></p>
-				<p>Estas operaciones pueden devolver dos constantes booleanas que pueden ser <code>True</code> o <code>False</code></p>
-				<p>Los siguientes operadores se utilizan entre dos variables booleanas (&&, ||, /= , ==):<br>
-					Primero declararemos dos variables booleanas x e y:<code>x=True</code>  <code>y=False</code><br>
-					AND(conjunción de x e y): <code>x<strong>&&</strong>y</code><br>
-					OR(disyunción de x e y): <code>x<strong>||</strong>y</code><br>
-					NOT(negación logica de x): <code><strong>not</strong> x</code><br>
-				</p>
+					<h3>Operaciones Booleanas</h3>
+					<p align="justify"></p>
+					<p>Estas operaciones pueden devolver dos constantes booleanas que pueden ser
+						<code>True</code> o
+						<code>False</code>
+					</p>
+					<p>Los siguientes operadores se utilizan entre dos variables booleanas (&&, ||, /= , ==):
+						<br> Primero declararemos dos variables booleanas x e y:
+						<code>x=True</code>
+						<code>y=False</code>
+						<br> AND(conjunción de x e y):
+						<code>x<strong>&&</strong>y</code>
+						<br> OR(disyunción de x e y):
+						<code>x<strong>||</strong>y</code>
+						<br> NOT(negación logica de x):
+						<code><strong>not</strong> x</code>
+						<br>
+					</p>
 
-				<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
+					<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
 
-				<p>Los siguientes operadores se utilizan entre dos variables numericas (<, >, <=, >=, ==, /= ):<br>
-					Primero declararemos dos variables numericas x e y:<code>x=(-3.2)</code>  <code>y=0</code><br>
-					Menor que(x menor que y): <code>x<strong><</strong>y</code><br>
-					Mayor que(x mayor que y): <code>x<strong>></strong>y</code><br>
-					Menor o igual que(x menor o igual que y): <code>x<strong><=</strong>y</code><br>
-					Mayor o igual que(x mayor o igual que y): <code>x<strong>>=</strong>y</code><br>
-				</p>
+					<p>Los siguientes operadores se utilizan entre dos variables numericas (
+						<,>,
+							<=,>=, ==, /= ):
+								<br> Primero declararemos dos variables numericas x e y:
+								<code>x=(-3.2)</code>
+								<code>y=0</code>
+								<br> Menor que(x menor que y):
+								<code>x<strong><</strong>y</code>
+								<br> Mayor que(x mayor que y):
+								<code>x<strong>></strong>y</code>
+								<br> Menor o igual que(x menor o igual que y):
+								<code>x<strong><=</strong>y</code>
+								<br> Mayor o igual que(x mayor o igual que y):
+								<code>x<strong>>=</strong>y</code>
+								<br>
+					</p>
 
-				<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
+					<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
 
-				<p>Los operadores == y /= se utilizan tanto para variables booleanas como variables numéricas y cadenas pero hay que tener ecuenta que las variables que se van a comparar
-					tienen que ser ambas del mismo tipo:<br>
-					Primero declararemos dos variables del mismo tipo en este caso seran numericas x e y:<code>x=3</code>  <code>y=3</code><br>
-					Diferencia de variables(verifica si x es diferente de y): <code>x<strong>/=</strong>y</code><br>
-					Igualdad de variables(verifica si x es igual a y): <code>y<strong>==</strong>x</code><br>
-				</p>
+					<p>Los operadores == y /= se utilizan tanto para variables booleanas como variables numéricas y cadenas pero hay que tener
+						ecuenta que las variables que se van a comparar tienen que ser ambas del mismo tipo:
+						<br> Primero declararemos dos variables del mismo tipo en este caso seran numericas x e y:
+						<code>x=3</code>
+						<code>y=3</code>
+						<br> Diferencia de variables(verifica si x es diferente de y):
+						<code>x<strong>/=</strong>y</code>
+						<br> Igualdad de variables(verifica si x es igual a y):
+						<code>y<strong>==</strong>x</code>
+						<br>
+					</p>
 
-				<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
+					<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
 
-				<h3>Operaciones Predefinidas</h3>
-				<p align="justify"></p>
-				<h4>Operaciones Predefinidas para enteros:</h4>
-				<p>Primero declararemos dos variables numericas enteras x e y:<code>x=(-3)</code>  <code>y=2</code><br>
-					El resto de x entre y: <code><strong>mod</strong> x y</code><br>
-					Máximo entre dos números: <code><strong>max</strong> x y</code> <br>
-					Mínimo entre dos números: <code><strong>min</strong> x y</code><br>
-					División entera de x entre y: <code><strong>div</strong> x y</code><br>
-					Absoluto de un número: <code><strong>abs</strong> x</code><br>
-					Verifica si el número es par: <code><strong>even</strong> x</code><br>
-					Verifica si el número es impar: <code><strong>odd</strong> x</code><br>
-					El máximo común divisor de dos números: <code><strong>gcd</strong> x y</code><br>
-				</p>
+					<h3>Operaciones Predefinidas</h3>
+					<p align="justify"></p>
+					<h4>Operaciones Predefinidas para enteros:</h4>
+					<p>Primero declararemos dos variables numericas enteras x e y:
+						<code>x=(-3)</code>
+						<code>y=2</code>
+						<br> El resto de x entre y:
+						<code><strong>mod</strong> x y</code>
+						<br> Máximo entre dos números:
+						<code><strong>max</strong> x y</code>
+						<br> Mínimo entre dos números:
+						<code><strong>min</strong> x y</code>
+						<br> División entera de x entre y:
+						<code><strong>div</strong> x y</code>
+						<br> Absoluto de un número:
+						<code><strong>abs</strong> x</code>
+						<br> Verifica si el número es par:
+						<code><strong>even</strong> x</code>
+						<br> Verifica si el número es impar:
+						<code><strong>odd</strong> x</code>
+						<br> El máximo común divisor de dos números:
+						<code><strong>gcd</strong> x y</code>
+						<br>
+					</p>
 
-				<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
+					<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
 
-				<h4>Operaciones Predefinidas para reales:</h4>
-				<p>	Primero declararemos dos variables numericas x e y:<code>x=(-3.6)</code>  <code>y=5</code><br>
-					El redondeo de x al entero más cercano: <code><strong>round</strong> x</code><br>
-					Máximo entre dos números: <code><strong>max</strong> x y</code> <br>
-					Mínimo entre dos números: <code><strong>min</strong> x y</code><br>
-					Absoluto de un número: <code><strong>abs</strong> x</code><br>
-				</p>
+					<h4>Operaciones Predefinidas para reales:</h4>
+					<p> Primero declararemos dos variables numericas x e y:
+						<code>x=(-3.6)</code>
+						<code>y=5</code>
+						<br> El redondeo de x al entero más cercano:
+						<code><strong>round</strong> x</code>
+						<br> Máximo entre dos números:
+						<code><strong>max</strong> x y</code>
+						<br> Mínimo entre dos números:
+						<code><strong>min</strong> x y</code>
+						<br> Absoluto de un número:
+						<code><strong>abs</strong> x</code>
+						<br>
+					</p>
 
-				<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
+					<iframe src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
 
-				<!--<div id="IDE" style="width: 50%; height: 800px; float:left">
+					<!--<div id="IDE" style="width: 50%; height: 800px; float:left">
 					<div class="panel panel-default">
 						<div class="panel-body" style="width: 100%; height: 100%">
 							<div id="editor" class="editor-grande"></div>
@@ -188,45 +259,51 @@
 				</div>
 				<iframe style="width: 50%; height: 800px; float:left" src="http://localhost:2222/ssh/host/192.168.0.6"></iframe>-->
 
-			</section>
+				</section>
+			</div>
 		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="copyright">
+					<li>&copy; IPP5. 2017 Todos los derechos reservados</li>
+					<li>Design:
+						<a href="http://html5up.net">HTML5 UP</a> &amp; Tunned by Johan Peña Designs.</li>
+				</ul>
+			</div>
+		</footer>
+
 	</div>
 
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="copyright">
-				<li>&copy; IPP5. 2017 Todos los derechos reservados</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> &amp; Tunned by Johan Peña Designs.</li>
-			</ul>
-		</div>
-	</footer>
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+	<!-- Scripts compilador -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-</div>
+	<script src="../js/vendor/bootstrap.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
-<!-- Scripts -->
-<script src="../assets/js/jquery.min.js"></script>
-<script src="../assets/js/skel.min.js"></script>
-<script src="../assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="../assets/js/main.js"></script>
-<!-- Scripts compilador -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="../js/main.js"></script>
 
-<script src="../js/vendor/bootstrap.min.js"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<script src="../js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		var editor = ace.edit("editor");
+		editor.setTheme("ace/theme/github");
+		editor.getSession().setMode("ace/mode/javascript");
+		iniciarCanvas(editor, "#exampleFrame")
+		restaurar("start/sketch.js", editor);
+	</script>
 
-<script src="../js/main.js"></script>
-
-<script src="../js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
-<script>
-			var editor = ace.edit("editor");
-			editor.setTheme("ace/theme/github");
-			editor.getSession().setMode("ace/mode/javascript");
-			iniciarCanvas(editor, "#exampleFrame")
-			restaurar("start/sketch.js", editor);
-		</script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script src="../assets/firebase/loginFromIndex.js"></script>
 
 </body>
+
 </html>
