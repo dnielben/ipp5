@@ -13,10 +13,13 @@ app = (function () {
     return {
         send: function(){
             var data = document.getElementById("commands").value;
-            api.command(data,function (data2){
-                $('#output').val(data2);
-                alert(data2)
+            api.getip().then(function(dato){
+                api.command(dato.ip,data,function (data2){
+                    $('#output').val(data2);
+                    alert(data2)
+                })
             })
+
         },
         press: function (){
             if (window.event.keyCode == 13) {
@@ -24,10 +27,13 @@ app = (function () {
             }
         },
         init: function(){
-            api.init();
+            api.getip().then(function(dato){
+                api.init(dato.ip);
+            })
         },
     };
 })();
+/*
 $(document).ready(function(){
     api.init();
-});
+});*/

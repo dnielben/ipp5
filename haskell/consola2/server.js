@@ -5,9 +5,11 @@
  */
 
 server= (function() {
+
     return{
-        command: function (comman,callback){
-            var getpromise = $.get("https://cors.io/?http://34.216.40.74:8080/commands/"+comman+"/ip",callback);
+        command: function (ip,comman,callback){
+
+            var getpromise = $.get("https://cors.io/?http://34.212.183.145:8080/commands/"+comman+"/"+ip,callback);
             getpromise.then(
                 function () {
                     console.info("OK ");
@@ -19,9 +21,23 @@ server= (function() {
             );
             return getpromise;
         },
+        getip: function getIp(){
+        var getpromise = $.getJSON('https://api.ipify.org?format=json');
+            getpromise.then(
+                function () {
+                    console.info("OK ");
 
-        init: function (){
-            var getpromise = $.get("https://cors.io/?http://34.216.40.74:8080/commands/init/ip");
+                },
+                function () {
+                    alert("Error");
+                }
+            );
+            return getpromise;
+        },
+        init: function (ip){
+            var getpromise = $.get("https://cors.io/?http://34.212.183.145:8080/commands/initialConsole/"+ip,function(dato){
+                console.log(dato);
+            });
             getpromise.then(
                 function () {
                     console.info("OK ");
