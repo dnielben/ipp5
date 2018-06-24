@@ -39,8 +39,14 @@
     <div id="wrapper">
         <!-- Footer -->
         <footer id="footer">
+            <div class="hide" id="alreadyLogged">
+                <section>
+                    <p>Ya estás logueado, puedes cerrar sesión con el siguiente botón.</p>
+                    <button id="logOutAction" class="special">Salir</button>
+                </section>
+            </div>
             <div class="inner">
-                <section id="regSection" class="">
+                <!-- <section id="regSection" class="">
                     <h2>Regístrate</h2>
                     <div class="form">
                         <div class="field half first">
@@ -59,9 +65,9 @@
                             </li>
                         </ul>
                     </div>
-                </section>
+                </section> -->
                 <section id="loginSection" class="">
-                    <h2>Ingresa</h2>
+                    <h2>Ingresar / registrarse</h2>
                     <div class="form">
                         <div class="field">
                             <input type="email" name="email" id="mail" placeholder="Correo" />
@@ -72,6 +78,9 @@
                         <ul class="actions">
                             <li>
                                 <button id="logInAction" class="special">Ingresar</button>
+                            </li>
+                            <li>
+                                <button id="regAction" class="special">Regístrate</button>
                             </li>
                         </ul>
                     </div>

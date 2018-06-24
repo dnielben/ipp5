@@ -11,12 +11,15 @@
     };
     firebase.initializeApp(config);
 
-    var txtChange = document.getElementById('note');
-    var dbRef = firebase.database().ref().child('text');
-    dbRef.on('value', snap => txtChange.innerText = snap.val());
+    // var txtChange = document.getElementById('note');
+    // var dbRef = firebase.database().ref().child('text');
+    // dbRef.on('value', snap => txtChange.innerText = snap.val());
 
     const logInSection = document.getElementById('loginSection');
-    const regSection = document.getElementById('regSection');
+    // const regSection = document.getElementById('regSection');
+    const alreadyLogged = document.getElementById('alreadyLogged');
+
+    const btnLogOut = document.getElementById('logOutAction');
 
     const correo = document.getElementById('mail');
     const password = document.getElementById('pwd');
@@ -43,14 +46,24 @@
         promise.catch(e => console.log("Mensaje: " + e.message + " Codigo: " + e.code));
     });
 
+    btnLogOut.addEventListener('click', e => {
+        firebase.auth().signOut();
+    });
+
     //Agregar un oyente de tiempo real de autenticación
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if(firebaseUser){
             console.log(firebaseUser);
             logInSection.classList.add('hide');
+            // regSection.classList.add('hide');
+            alreadyLogged.classList.add('inner');
+            alreadyLogged.classList.remove('hide');
         }else{
             console.log('notLoggedIn');
             logInSection.classList.remove('hide');
+            // regSection.classList.remove('hide');
+            alreadyLogged.classList.remove('inner');
+            alreadyLogged.classList.add('hide');
         }
     });
 
