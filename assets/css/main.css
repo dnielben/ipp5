@@ -2072,18 +2072,18 @@
 
 /* Form */
 
-	form {
+	.form {
 		margin: -1em 0 2em 0;
 	}
 
-		form:after {
+		.form:after {
 			content: '';
 			display: block;
 			clear: both;
 			height: 1px;
 		}
 
-		form .field {
+		.form .field {
 			position: relative;
 			float: left;
 			margin: 0 0 1.3em 0;
@@ -2091,25 +2091,25 @@
 			width: 100%;
 		}
 
-		form .half {
+		.form .half {
 			width: calc(50% + 1em) !important;
 			padding-left: 2em;
 		}
 
-		form .half.first {
+		.form .half.first {
 			width: calc(50% - 1em) !important;
 			padding-left: 0;
 		}
 
-		form :last-child {
+		.form :last-child {
 			margin-bottom: 0;
 		}
 
-		form .half:nth-last-child(2) {
+		.form .half:nth-last-child(2) {
 			margin-bottom: 0;
 		}
 
-		form .actions {
+		.form .actions {
 			position: relative;
 			clear: both;
 			padding-top: 1em;
@@ -2117,17 +2117,17 @@
 
 		@media screen and (max-width: 480px) {
 
-			form .half {
+			.form .half {
 				width: 100% !important;
 				padding-left: 0;
 			}
 
-			form .half.first {
+			.form .half.first {
 				width: 100% !important;
 				padding-left: 0;
 			}
 
-			form .half:nth-last-child(2) {
+			.form .half:nth-last-child(2) {
 				margin: 0 0 1.3em 0;
 			}
 
@@ -3535,4 +3535,8 @@
 
 	.consola {
 		width: 100%;
+	}
+
+	.hide {
+		display: none;
 	}
