@@ -7,10 +7,11 @@
 <html>
 
 <head>
-	<title>JS - Condicionales</title>
+	<title>Perfil</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<meta name="theme-color" content="#F7DD41">
 	<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
@@ -29,7 +30,6 @@
 	<link rel="manifest" href="../favicon/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
-	<script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
@@ -70,7 +70,7 @@
 					<a href="../index.html">Inicio</a>
 				</li>
 				<li>
-					<a href="start.html">JavaScript</a>
+					<a href="#">JavaScript</a>
 				</li>
 				<li>
 					<a href="../haskell/start.html">Haskell</a>
@@ -86,7 +86,7 @@
 				</li>
 			</ul>
 		</nav>
-		
+
 		<!-- Menu escritorio -->
 		<div class="navbar">
 			<a href="../index.html">Inicio</a>
@@ -119,103 +119,39 @@
 		</div>
 
 		<!-- Main -->
-		<div id="main">
-
+		<div class="" id="notLogged">
 			<div class="inner">
+				<h1>Bienvenido, aún no estás logeado pero puedes ingresar a la plataforma haciendo click en el botón superior derecho.
+				</h1>
+			</div>
+		</div>
 
-				<section>
-					<h1>Javascript</h1>
-
-					<h2>Eventos y Condicionales</h2>
-
-					<h3>Sentencias condicionales.</h3>
-
-					<p align="justify">Los condicionales permiten ejecutar un conjunto de instrucciones particulares solo cuando se cumple una condición en
-						particular por ejemplo, cuando un valor es mayor o igual a 600.</p>
-
-					<p>Una sentencia condicional se define usando la palabra reservada
-						<strong>
-							<i>if</i>
-						</strong> de la siguiente manera:</p>
-
-					<p>
-						<code><strong>if</strong>([Condición]) { [Lista de instrucciones separadas por ;] } </code>
-					</p>
-
-					<p>Como ejemplo, suponga que definimos e inicializamos una variable
-						<i>velocidad</i> con valor 1, y una variable
-						<i>pos</i> con valor 300.</p>
-
-					<pre><code><strong>var</strong> velocidad = 1;
-<strong>var</strong> pos = 300;</code></pre>
-
-					<script>var velocidad = 1; var pos = 300;</script>
-
-					<p align="justify">Ahora se muestra un programa que aumenta el valor de
-						<i>pos</i> de acuerdo a la velocidad y cuando la posición llegua a un límite superior cambia la dirección de la velocidad
-						(es decir la multiplique por -1). Igualmente, el programa cambiará la dirección de la velocidad cuando llegue a un
-						límite inferior. </p>
-
-					<pre><code>pos = pos + velocidad;
-<strong>if</strong>(pos >= 305){velocidad = velocidad * (-1);}
-<strong>if</strong>(pos <= 295){velocidad = velocidad * (-1);}</code></pre>
-
-					<p>Valor de la variable
-						<i>pos</i>:
-						<span id="posVar" class="medalla">300</span>
-					</p>
-
-					<p>Valor de la variable
-						<i>velocidad</i>:
-						<span id="velVar" class="medalla">1</span>
-					</p>
-
-					<a class="button special" onclick="pos = pos + velocidad;if(pos >= 305){velocidad = velocidad * (-1);}if(pos <= 295){velocidad = velocidad * (-1);}document.getElementById('posVar').innerHTML=pos;document.getElementById('velVar').innerHTML=velocidad;">Ejecutar</a>
-
-					<h3>Ejemplo</h3>
-
-					<p>Este ejemplo muestra una mesa de billar.</p>
-
-					<p>Intente realizar el programa descrito a continuación:</p>
-					<ul>
-						<li>Explique qué hace el ejemplo. </li>
-						<li>Usando condicionales permita que la bola rebote en los bordes de la mesa.</li>
-						<li align="justify">Ahora considere que la función
-							<code>Math.random();</code> retorna un número real aleatorio entre 0 y 1. Adicionalmente considere que, la función
-							<code>Math.floor</code> convierte un número real al entero anterior más cercano. Entonces, usted puede calcular un número aleatorio entre
-							1 y 10 de la siguiente manera:
-							<code>Math.floor((Math.random() * 10) + 1);</code>
-						</li>
-						<li>Permita que las velocidades iniciales de la bola se calculen de manera aleatoria al iniciar el programa.</li>
-						<li>Borré la línea de
-							<code>background(0, 180, 0);</code> y pásela a la función
-							<code>setup</code>.¿Qué pasa?</li>
-					</ul>
-
-					<p>
-						<strong>Recuerde:</strong> siempre puede restaurar el programa original oprimiendo el botón
-						<strong>Restaurar</strong>.</p>
-
-					<div id="IDE">
-						<iframe id="exampleFrame" src="../assets/embeded.html" width="600" height="400" style="width: 100%"></iframe>
-						<div id="myContainer"></div>
-						<hr/>
-						<button class="btn btn-default" type="submit" onclick="ejecutar(editor, '#exampleFrame')">Ejecutar</button>
-						<button class="btn btn-default" type="submit" onclick="restaurar('condicionales/sketch.js', editor)">Restaurar</button>
-						<br/>
-						<br/>
-
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Código de ejemplo</h3>
-							</div>
-							<div class="panel-body" style="width: 100%">
-								<div id="editor" class="editor-mediano"></div>
-							</div>
-						</div>
-					</div>
-					<!-- asd -->
-				</section>
+		<div class="hide" id="logged">
+			<div class="inner">
+				<h1 id="headerH1"></h1>
+				<p>
+					<strong>Nombre</strong>
+				</p>
+				<p class="" id="nombresLabel"></p>
+				<div id="editNombres" class="field-user hide">
+					<input type="text" id="nombres" placeholder="Corrige tu nombre aquí.">
+				</div>
+				<p>
+					<strong>Apellidos</strong>
+				</p>
+				<p class="" id="apellidosLabel"></p>
+				<div id="editApellidos" class="field-user hide">
+					<input type="text" id="apellidos" placeholder="Corrige tus apellidos aquí.">
+				</div>
+				<p>
+					<strong>Correo de la escuela</strong>
+				</p>
+				<p class="" id="emailLabel"></p>
+				<div id="editEmail" class="field-user hide">
+					<input type="email" id="correo" placeholder="Corrige tu correo universitario aquí.">
+				</div>
+				<button id="editAction" class="special">Editar</button>
+				<button id="updateAction" class="hide special">Actualizar</button>
 			</div>
 		</div>
 
@@ -229,7 +165,6 @@
 				</ul>
 			</div>
 		</footer>
-
 	</div>
 
 	<!-- Scripts -->
@@ -238,26 +173,9 @@
 	<script src="../assets/js/util.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="../assets/js/main.js"></script>
-	<!-- Scripts compilador -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-	<script src="../js/vendor/bootstrap.min.js"></script>
-
-	<script src="../js/main.js"></script>
-
-	<script src="../js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
-	<script>
-		var editor = ace.edit("editor");
-		editor.setTheme("ace/theme/github");
-		editor.getSession().setMode("ace/mode/javascript");
-		iniciarCanvas(editor, "#exampleFrame")
-		restaurar("condicionales/sketch.js", editor);
-	</script>
 
 	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-	<script src="../assets/firebase/loginFromIndex.js"></script>
+	<script src="../assets/firebase/profile.js"></script>
 
 </body>
 

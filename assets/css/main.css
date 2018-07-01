@@ -3544,3 +3544,11 @@
 	.authContainer{
 		float: right;
 	}
+
+	.field-user {
+		position: relative;
+		margin-top: -2em;
+		margin-bottom: 1em;
+		vertical-align: top;
+		width: 100%;
+	}
