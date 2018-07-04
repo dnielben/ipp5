@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/consola2.css">
 		<meta name="theme-color" content="#F7DD41">
 		<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
@@ -125,14 +126,22 @@
 							</div>
 						</div>
                         <span></span>
-						<div id="console" style="width: 50%; height: 800px; float:right; background: #FFFFFF" >
-                            <div style="position: absolute; ">
-                                <output  onkeypress="app.press()" id="output"  style="color:#fff;" autocapitalize="off"  autocorrect="off" spellcheck="false" autocomplete="off" style="position: absolute; width: 2px;">
-                                </output>
-                                <p style="color:#000000">---> <input onkeypress="app.press()" id="commands" style="color:#fff;background: #FFFFFF"  >
-                                </p>
+                        <div id="console" class=" span6 ">
+                            <div id="focus" class="jquery-console-inner jquery-console-focus">
+                                <div class="jquery-console-message jquery-console-welcome" style="">
+
+                                    Type Haskell expressions in here.
+                                </div>
+                                <div id="salida" class="jquery-console-prompt-box" >
+                                    <output id="output"></output><br>
+                                    <span class="jquery-console-prompt-label" style="display: inline;font-size:x-large">λ</span>
+                                    <input id="commands"  onkeypress="app.press()" style="font-size: large;background-color:#3C3454;background:transparent;border: 0px; outline:none;"/>
+
+                                </div>
+
+
                             </div>
-						</div>
+                        </div>
 					</section>
 				</div>						
 			</div>
