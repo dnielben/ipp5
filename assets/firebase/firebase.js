@@ -26,6 +26,14 @@
     const btnLogin = document.getElementById('logInAction');
     const btnRegister = document.getElementById('regAction');
 
+    function writeUserData(userId, name, lastName, email) {
+        firebase.database().ref('users/' + userId).set({
+            name: name,
+            lastName: lastName,
+            email: email
+        });
+    }
+
     btnLogin.addEventListener('click', e => {
         //Obtener valores de correo y contraseña
         const email = correo.value;
@@ -40,12 +48,20 @@
 
     btnRegister.addEventListener('click', e => {
         //Obtener valores de correo y contraseña
-        const email = correo.value;
-        const contra = password.value;
+        // const email = correo.value;
+        // const contra = password.value;
         const auth = firebase.auth();
         //Registrarse ante firebase
-        const promise = auth.createUserWithEmailAndPassword(email, contra);
-        promise.catch(e => console.log("Mensaje: " + e.message + " Codigo: " + e.code));
+        console.log("entra a registro");
+        console.log("correo: " + eciMailReg.value);
+        const promise = auth.createUserWithEmailAndPassword(emailReg.value, pwdReg.value);
+        promise
+        .then(e => auth.onAuthStateChanged(firebaseUser => {
+            if (firebaseUser) {
+                writeUserData(firebaseUser.uid, nombresReg.value, apellidosReg.value, eciMailReg.value);
+            }
+        } ))
+        .catch(e => console.log("Mensaje: " + e.message + " Codigo: " + e.code));
     });
 
     btnLogOut.addEventListener('click', e => {
