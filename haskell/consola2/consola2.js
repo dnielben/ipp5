@@ -19,13 +19,15 @@ app = (function () {
                     }else{
                         var res =data2.substring(201);
                         res = res.replace(" ","").split("Prelude>");
-                        if(res[res.length-2]!==""){
+                        if(res[res.length-2]!==" "){
                             document.getElementById("out").innerHTML=text+res[res.length-2]+'<br>';
                         }
-                    }console.log(data2);
+                    }
+                    console.log(data2);
 
                 })
-            })
+            });
+            document.getElementById("commands").value='';
 
         },
         press: function (){
