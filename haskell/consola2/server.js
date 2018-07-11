@@ -9,7 +9,7 @@ server= (function() {
     return{
         command: function (ip,comman,callback){
 
-            var getpromise = $.get("https://cors.io/?http://34.213.71.234:8080/commands/"+comman+"/"+ip,callback);
+            var getpromise = $.get("https://cors.io/?http://34.220.243.249:8080/commands/"+comman+"/"+ip,callback);
             getpromise.then(
                 function () {
                     console.info("OK ");
@@ -35,7 +35,7 @@ server= (function() {
             return getpromise;
         },
         init: function (ip){
-            var getpromise = $.get("https://cors.io/?http://34.213.71.234:8080/commands/initialConsole/"+ip,function(dato){
+            var getpromise = $.get("https://cors.io/?http://34.220.243.249:8080/commands/initialConsole/"+ip,function(dato){
                 console.log(dato);
             });
             getpromise.then(
