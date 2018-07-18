@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/consola2.css">
 	<meta name="theme-color" content="#F7DD41">
 	<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
@@ -32,9 +33,14 @@
 	<script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="consola2/server.js"></script>
+	<script src="consola2/consola2.js"></script>
 </head>
 
-<body>
+<body onload="app.init()">
 	<!-- Wrapper -->
 	<div id="wrapper">
 
@@ -159,7 +165,6 @@
 						<code>"hello"</code> es solo una alternativa sintáctica de
 						<code>['h', 'e', 'l', 'l', 'o']</code> como lista de caracteres.
 					</p>
-					<iframe style="background-image:url(https://www.haskell.org/static/img/pattern.png)" src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
 					<h3>Listas por coomprension</h3>
 					<p>Son listas que no usan cabeza y cola, sino ciertos argumentos para definir los elementos que pertenecen a ella, las
 						listas por coomprension son muy similares a los conjuntos definidos de forma extensa que se definen de este modo Nombre_del_conjunto=
@@ -170,7 +175,6 @@
 								donde la función de salida es x*-1, el conjunto de entrada es x ϵ N y el filtro del conjunto de entrada es que x sea par
 								y este entre -11 y 11.
 					</p>
-					<iframe style="background-image:url(https://www.haskell.org/static/img/pattern.png)" src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
 					<h3>Operaciones sobre listas</h3>
 					<p>Con las listas tambien se pueden realizar operaciones, pero estas operaciones solo se pueden realizar sobre listas del
 						mismo tipo ya sea numérico, cadena, booleano o listas de listas.
@@ -213,16 +217,19 @@
 					</p>
 					<p>Como las cadenas son listas entonces podemos usar las funciones anteriores sobre las cadenas(
 						<code>"hola"<strong>++</strong>"willson"</code>), lo cual es realmente útil.</p>
-
-					<iframe style="background-image:url(https://www.haskell.org/static/img/pattern.png)" src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
-					<!--div id="IDE" style="width: 50%; height: 800px; float:left">
-								<div class="panel panel-default">
-									<div class="panel-body" style="width: 100%; height: 100%">
-										<div id="editor" class="editor-grande"></div>
-									</div>
-								</div>
-							</div>
-							<iframe style="width: 50%; height: 800px; float:left" src="http://localhost:2222/ssh/host/192.168.0.6"></iframe-->
+				</section>
+				<section >
+					<div class="panel-heading">
+						<h3 class="panel-title">Prueba en consola</h3>
+					</div>
+					<div onscroll="true" class="jquery-console-message jquery-console-welcome" style="background-image: url(https://www.haskell.org/static/img/pattern.png)">
+						Type Haskell expressions in here.
+						<div  class="jquery-console-prompt-box">
+							<div id="out"></div>
+							<span class="jquery-console-prompt-label" style="display: inline;font-size:x-large">λ</span>
+							<input id="commands"  onkeypress="app.press()" style="width:98%;font-size: large;background-color:#3C3454;background:transparent;border: 0px; outline:none;"/>
+						</div>
+					</div>
 				</section>
 
 			</div>

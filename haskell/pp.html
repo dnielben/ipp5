@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/consola2.css">
 	<meta name="theme-color" content="#F7DD41">
 	<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
@@ -32,9 +33,14 @@
 	<script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="consola2/server.js"></script>
+	<script src="consola2/consola2.js"></script>
 </head>
 
-<body>
+<body onload="app.init()">
 	<!-- Wrapper -->
 	<div id="wrapper">
 
@@ -119,7 +125,7 @@
 		</div>
 
 		<!-- Main -->
-		<div id="main">
+		<div id="main" >
 			<div class="inner">
 
 				<section>
@@ -158,9 +164,6 @@
 						<code>x<strong>^</strong>y</code>
 						<br>
 					</p>
-
-					<iframe style="background-image:url(https://www.haskell.org/static/img/pattern.png)" src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
-
 					<h3>Operaciones Booleanas</h3>
 					<p align="justify"></p>
 					<p>Estas operaciones pueden devolver dos constantes booleanas que pueden ser
@@ -179,9 +182,6 @@
 						<code><strong>not</strong> x</code>
 						<br>
 					</p>
-
-					<iframe style="background-image:url(https://www.haskell.org/static/img/pattern.png)" src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
-
 					<p>Los siguientes operadores se utilizan entre dos variables numericas (
 						<,>,
 							<=,>=, ==, /= ):
@@ -198,9 +198,6 @@
 								<code>x<strong>>=</strong>y</code>
 								<br>
 					</p>
-
-					<iframe style="background-image:url(https://www.haskell.org/static/img/pattern.png)" src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
-
 					<p>Los operadores == y /= se utilizan tanto para variables booleanas como variables numéricas y cadenas pero hay que tener
 						ecuenta que las variables que se van a comparar tienen que ser ambas del mismo tipo:
 						<br> Primero declararemos dos variables del mismo tipo en este caso seran numericas x e y:
@@ -212,9 +209,6 @@
 						<code>y<strong>==</strong>x</code>
 						<br>
 					</p>
-
-					<iframe style="background-image:url(https://www.haskell.org/static/img/pattern.png)" src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
-
 					<h3>Operaciones Predefinidas</h3>
 					<p align="justify"></p>
 					<h4>Operaciones Predefinidas para enteros:</h4>
@@ -240,8 +234,6 @@
 						<br>
 					</p>
 
-					<iframe style="background-image:url(https://www.haskell.org/static/img/pattern.png)" src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
-
 					<h4>Operaciones Predefinidas para reales:</h4>
 					<p> Primero declararemos dos variables numericas x e y:
 						<code>x=(-3.6)</code>
@@ -256,18 +248,19 @@
 						<code><strong>abs</strong> x</code>
 						<br>
 					</p>
-
-					<iframe style="background-image:url(https://www.haskell.org/static/img/pattern.png)" src="http://34.216.72.108:4001/#jquery-console-prompt-label" class="consola"></iframe>
-
-					<!--<div id="IDE" style="width: 50%; height: 800px; float:left">
-					<div class="panel panel-default">
-						<div class="panel-body" style="width: 100%; height: 100%">
-							<div id="editor" class="editor-grande"></div>
+				</section>
+				<section >
+					<div class="panel-heading">
+						<h3 class="panel-title">Prueba en consola</h3>
+					</div>
+					<div onscroll="true" class="jquery-console-message jquery-console-welcome" style="background-image: url(https://www.haskell.org/static/img/pattern.png)">
+						Type Haskell expressions in here.
+						<div  class="jquery-console-prompt-box">
+							<div id="out"></div>
+							<span class="jquery-console-prompt-label" style="display: inline;font-size:x-large">λ</span>
+							<input id="commands"  onkeypress="app.press()" style="width:98%;font-size: large;background-color:#3C3454;background:transparent;border: 0px; outline:none;"/>
 						</div>
 					</div>
-				</div>
-				<iframe style="width: 50%; height: 800px; float:left" src="http://localhost:2222/ssh/host/192.168.0.6"></iframe>-->
-
 				</section>
 			</div>
 		</div>
