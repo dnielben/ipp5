@@ -14,10 +14,13 @@ app = (function () {
             api.getip().then(function(dato){
                 api.command(dato.ip,data,function (data2){
                     var text=document.getElementById("out").innerHTML;
+                    text+='<span class="jquery-console-prompt-label" style="font-size:medium">></span>'+
+                        data+'<br>';
+                    document.getElementById("out").innerHTML=text;
                     if(data2.includes("<interactive>:")){
                         document.getElementById("out").innerHTML=text+'Error'+ data2+'<br>';
                     }else{
-                        var res =data2.substring(201);
+                        var res =data2.substring(61);
                         res = res.replace(" ","").split("Prelude>");
                         if(res[res.length-2]!==" "){
                             document.getElementById("out").innerHTML=text+res[res.length-2]+'<br>';
