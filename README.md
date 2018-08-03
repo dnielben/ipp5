@@ -14,17 +14,42 @@ Leonardo Castro Susa.
 
 ## Instrucciones para inicializar IPP5 en una nueva instancia
 
+El proyecto ipp5 se constituye en dos partes, la primera parte consta en el módulo de cliente que será consumido a través de http, esta parte corresponde a los HTML's que se incluyen en este proyeto junto con sus sub-capertas (A excepción de la carpeta Backend), para hacer pública la página de ipp5 se deben ubicar los fuentes en la carpeta del host deseado, basta solo con clonar el repositorio y exponer la ruta de sus archivos.
+La segunda parte del proyecto es la que constituye el backend, aquella parte está encargada del procesamiento de cálculos para el intérprete de los módulos de Haskell y los pasos para su ejecución se describen a continuación:
+
 Las instrucciones presentadas toman a AWS como sistema servidor para ejecutar el Backend de la plataforma IPP5:
 
-* Crear cuenta en [AWS]
+* Ingresar o Crear una cuenta de Amazon Web Services [AWS]
 * Seguir las instrucciones de creación de instancias [EC2]
 * Seguir las instrucciones de acceso mediante SSH a la máquina EC2.
     * Este paso es más sencillo desde windows, descarge las herramientas Putty y PuttyGen.
 * Una vez dentro de la instancia, clonar las fuentes del repo [IPP5] en la máquina HOST.
 * Asegurarse de tener instalado en la máquina HOST los siguientes elementos:
     * [JDK Java] Versión 1.7 (Revise la documentación pertinente para su sistema operativo.)
+        *  Para verificar la correcta instalación del componente ejecute el siguiente comando:
+```sh
+javac -version
+#Se debe mostrar una linea con información parecida a esta
+javac 1.7.0_131
+```
     * Compilador [Haskell] (Revise la documentación pertinente para su sistema operativo.)
+        *  Para verificar la correcta instalación del componente ejecute el siguiente comando:
+```sh
+stack ghci
+#Se debe mostrar la linea de comandos de haskell con prefijo 'Prelude>'
+```
     * Maven (Revise la documentación pertinente para su sistema operativo.)
+        *  Para verificar la correcta instalación del componente ejecute el siguiente comando:
+```sh
+mvn -v
+#Se debe mostrar una linea con información parecida a esta
+Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T15:58:10-05:00)
+Maven home: C:\apache-maven-3.2.3
+Java version: 1.8.0_131, vendor: Oracle Corporation
+Java home: C:\Program Files\Java\jdk1.8.0_131\jre
+Default locale: en_US, platform encoding: Cp1252
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "dos"
+```     
 * Ingresar a la carpeta contenedora del proyecto [Java Spring] 
 ```sh
 cd ipp5
@@ -40,8 +65,50 @@ $ mvn package
 $ mvn spring-boot:run
 ```
 *Tener en cuenta que este proceso ejecutará el backend del interprete Haskell, no debe cerrarlo sino dejarlo ejecutando en Background.
-* Opcional: Si se está ejecutando el backend desde una nueva instancia EC2, o la misma estaba en estado apagado "STOP" se debe configurar en el repositorio de [IPP5] las nuevas IP's en cada uno de los módulos de la sección Haskell ya que cada vez se genera una IP pública diferente.
 
+* Si se está ejecutando el backend desde una nueva instancia EC2, o la misma estaba en estado apagado "STOP" se debe configurar en el repositorio de [IPP5] la nueva IP que hace referencia al componente de backend desde el componente de cliente, para esto siga los siguientes pasos:
+* Posicionado en la carpeta de su repositorio ejecute los siguientes comandos:
+```sh
+cd haskell
+cd consola2
+```
+* En esta carpeta encontrará 2 arhivos, consola2.js y server.js, para configurar la nueva ip de acceso siga los siguientes pasos que editarán el archivo server.js desde consola (Linux):
+```sh
+user$: ls
+consola2.js server.js
+user$: vi server.js
+#Se abrirá el archivo 'server.js' desde la terminal
+#Busque las lineas 12 y 38 del archivo
+#En cada una de las repeticiones de la siguiente ruta 'https://cors.io/?http://35.163.23.102:8080/commands'    
+#reemplaze la IP actual (en este caso '35.163.23.102') por la nueva IP designada a su servidor.
+#Para poder editar presione 1 vez la tecla 'i'
+#Una vez terminado, presione la tecla 'Escape' y escriba :wq!
+#Esto guardará el archivo con los cambios realizados
+#Recuerde usar las flechas del teclado para navegar a través del documento.
+#Ejemplo
+#Se presiona la tecla 'i' para poder editar el archivo
+    var getpromise = $.get("https://cors.io/?http://cambiar aquí:8080/commands/"+comman+"/"+ip,callback);
+    #Se agrega el texto 'cambiar aquí' que usted deberá reemplazar con su nueva IP
+        getpromise.then(
+            function () {
+                console.info("OK ");
+            },
+            function () {
+                alert("Error");
+            }
+            return getpromise;
+        );
+#Se presiona la tecla 'Escape'
+#Se escribe el comando de guardar y cerrar
+:wq!
+#Su archivo queda guardado y listo para usar.
+user$
+```
+* Ajuste de IP usando editor de texto:
+    * Vaya a las lineas 12 y 38 del archivo
+    * En cada una de las repeticiones de la siguiente ruta 'https://cors.io/?http://35.163.23.102:8080/commands'     reemplaze la IP actual (en este caso '35.163.23.102') por la nueva IP designada a su servidor.
+    * Guarde el archivo
+    
 ### Repositorios de implementación Backend
 Implementación con NodeJS:          https://github.com/woexpect/SSHConnectionIpp5.git
 
