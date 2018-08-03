@@ -16,16 +16,19 @@ Leonardo Castro Susa.
 
 Las instrucciones presentadas toman a AWS como sistema servidor para ejecutar el Backend de la plataforma IPP5:
 
-* Crear cuenta en [AWS] 
+* Crear cuenta en [AWS]
 * Seguir las instrucciones de creación de instancias [EC2]
-* Seguir las instrucciones de acceso mediante SSH a la máquina EC2
-* Una vez dentro de la instancia, clonar las fuentes de [Java Spring] en la máquina HOST
-* Asegurarse de tener instalado en la máquina EC2 los siguientes elementos:
-    * [JDK Java] Versión 1.7
-    * Compilador [Haskell]
-    * Maven
+* Seguir las instrucciones de acceso mediante SSH a la máquina EC2.
+    * Este paso es más sencillo desde windows, descarge las herramientas Putty y PuttyGen.
+* Una vez dentro de la instancia, clonar las fuentes del repo [IPP5] en la máquina HOST.
+* Asegurarse de tener instalado en la máquina HOST los siguientes elementos:
+    * [JDK Java] Versión 1.7 (Revise la documentación pertinente para su sistema operativo.)
+    * Compilador [Haskell] (Revise la documentación pertinente para su sistema operativo.)
+    * Maven (Revise la documentación pertinente para su sistema operativo.)
 * Ingresar a la carpeta contenedora del proyecto [Java Spring] 
 ```sh
+cd ipp5
+cd Backend
 cd JavaSocketsConnectionIpp5
 cd haskell-java
 ```
@@ -41,8 +44,11 @@ $ mvn spring-boot:run
 
 ### Repositorios de implementación Backend
 Implementación con NodeJS:          https://github.com/woexpect/SSHConnectionIpp5.git
+
 Implementación con Haskell Snap:    https://github.com/woexpect/BasicHaskellConsole
+
 Implementación con Java Spring:     https://github.com/LauraMilenaRB/JavaSocketsConnectionIpp5.git
+
 
 [AWS]: <https://portal.aws.amazon.com/billing/signup#/start>
 [IPP5]: <https://github.com/dnielben/ipp5>
